@@ -59,10 +59,10 @@ V1 is a credibility validator: a lean, fast, frontend-only website that controls
 
 2. **Case study pages (4).** One standalone page per case study. Each follows the decision narrative structure: context, problem, decision, execution, outcome, learning. Each page works without homepage context (its own "who is Aju" context line, its own metrics, its own CTA). Designed for the forwarded link use case.
 
+   - **CanadaHelps Turnaround** (executive transformation at CanadaHelps). Inherited 4 disconnected teams, built coherent operating strategy, restructured into pods, deployed AI as operating lever (45 pp conversion lift). Retention 67% to 83%, stickiness 25% to 77%, NPS 5 to 33.
    - **Ensemble** (0 to 1 SaaS incubation at CanadaHelps). Includes the CH1→CH2→CH3 failure arc: trial extension kills conversion, sales recovery with discounts, discounts crash unit economics, fix. $432K ARR, 200+ customers, 86% PLG.
-   - **AI Sales Agent** (AI as a commercial operating lever at CanadaHelps). 5% to 45% lead conversion, 45 pp lift. Should include a failure beat if source material supports one.
    - **HPCC Platform Commercialization** (internal tech to $50M+ business at LexisNexis). 100+ enterprise clients. 25,000+ developer community. 12 business cases, $38M investment.
-   - **AI Competitive Intelligence System** (production AI build, Mapleview Partners). Live proof link to deployed app. GitHub repo link. The only case study with a clickable working product.
+   - **Redline** (AI contract review product, Mapleview Partners). Research driven product (71% freelancer non payment), trust first architecture (every flag cites its source), full stack execution (auth, database, 68 tests, 13 routes). Live proof link to deployed app. GitHub repo link.
 
 3. **About page.** Career narrative (not resume rehash). Experience timeline from Cognizant through Databricks. Education. What drives Aju, what he avoids. Mapleview Partners shown as continuous advisory practice (Nov 2021 to Aug 2023, paused for CanadaHelps, resumed Jul 2026). CanadaHelps named and framed with commercial scale in every mention.
 
@@ -71,8 +71,8 @@ V1 is a credibility validator: a lean, fast, frontend-only website that controls
 ### Content rules
 
 - CanadaHelps is named in every mention and framed with commercial scale in the same breath. Format: "CanadaHelps: Canada's largest online giving and payments platform. $260M+ processing volume. $27M+ P&L." (ADR 0008)
-- At least two of four case studies include a visible failure arc. Not performative humility. Specific numbers, specific consequences, specific recovery. (ADR 0009)
-- GitHub appears as proof links inside relevant case studies (AI Competitive Intelligence) and as a social icon in the header/footer. Not a standalone page.
+- At least one case study includes a deep, multi-beat failure arc. Ensemble carries the CH1→CH2→CH3 arc. No forced failure in other case studies. (ADR 0009)
+- GitHub appears as proof links inside relevant case studies (Redline) and as a social icon in the header/footer. Not a standalone page.
 - Substack appears as an outbound link ("my writing") and as a social icon. Not embedded, not an RSS feed.
 - All copy goes through the Humanizer Gate before finalization, then the Post Humanizer Gate (strip hyphens between words, replace em dashes with appropriate punctuation).
 - Every claim on the site must be supported by source documents. A claim whose source cannot be shown is a bug. (ADR 0001)
@@ -82,7 +82,12 @@ V1 is a credibility validator: a lean, fast, frontend-only website that controls
 - **Stack:** Next.js static export on Vercel. No Supabase. No database. No auth. No server runtime.
 - **Performance:** Sub 2 second LCP. Pass Core Web Vitals. 63% of portfolio sites fail this (research/summary.md, Section 4, Point 1). This is a free differentiator.
 - **Mobile:** Fully responsive. 60%+ of web traffic is mobile. Recruiters review on phones between meetings. 61% of mobile users will not return after a bad experience (research/summary.md, Issue #4).
-- **SEO:** Person schema, CreativeWork schema, BreadcrumbList markup. Target page 1 for "Aju Joseph John" name search.
+- **SEO:** Person schema, CreativeWork schema, BreadcrumbList markup. Target page 1 for "Aju Joseph John" name search. Structural SEO built in from the start:
+  - **Meta titles and descriptions** per page. The meta title controls the Google search snippet. Without it, Google picks whatever it wants from the page and the framing is lost before the visitor clicks. Same risk as the CanadaHelps name snap judgment, but at the search result level.
+  - **Open Graph tags** per page. When a case study link is forwarded via Slack, email, or LinkedIn, OG tags control the preview card. Without them, the link preview is blank or a random text grab. This directly affects the forwarded link use case (ADR 0005).
+  - **Canonical URLs** per page. Prevents duplicate content issues when the site is accessible on both a Vercel subdomain and a future custom domain.
+  - **Semantic heading hierarchy** (h1/h2/h3 strategy per page). Google uses heading structure to understand page content and extract featured snippets.
+  - **Sitemap** (auto-generated). Tells Google all 8 pages exist. For a small new site competing against LinkedIn for "Aju Joseph John," every indexing signal matters.
 - **Accessibility:** WCAG 2.1 compliance. 68% of portfolio sites fail this (research/summary.md, Section 4, Point 3). Also affects SEO and corporate network access.
 - **Updates:** Content changes happen via git commit and Vercel redeploy. No CMS. Adding a new case study should be a repeatable operation using the same template and structure.
 
@@ -111,6 +116,11 @@ These are testable. Each one can be verified by a person or a tool after V1 ship
 **SEO.**
 - "Aju Joseph John" Google search returns the portfolio on page 1 within 60 days of launch.
 - Person, CreativeWork, and BreadcrumbList schema markup present and valid (test with Google Rich Results Test).
+- Every page has a meta title and meta description (inspect via View Source or Lighthouse).
+- Every page has Open Graph tags (og:title, og:description, og:url). Test by pasting a case study URL into Slack or LinkedIn and verifying the preview card shows a controlled title and description, not a random text grab.
+- Canonical URLs present on every page.
+- Sitemap exists at /sitemap.xml and includes all 8 routes.
+- Each page has exactly one h1. Heading hierarchy does not skip levels.
 
 **Maintenance signal.** The most recent role and most recent project visible on the site should reflect current reality. "When was this last updated?" is answered by the content, not by a timestamp.
 
@@ -142,13 +152,13 @@ Chose against: Serving recurring visitors from LinkedIn posts who want thought l
 
 Who is worse off: People who click through from a LinkedIn post and want to read more. They land on case studies and an About page instead of a writing archive. They have to follow the Substack link for that. If this traffic is higher than expected, revisit for V2.
 
-**Call 4: Four case studies, not six.** (ADR 0006)
+**Call 4: Four case studies, revised lineup.** (ADR 0006)
 
-Chose: Ensemble, AI Sales Agent, HPCC, AI Competitive Intelligence. Four distinct capabilities, no overlap.
+Chose: CanadaHelps Turnaround (CH10), Ensemble, HPCC, Redline. Two CanadaHelps stories (turnaround and incubation), one LexisNexis, one Mapleview AI product.
 
-Chose against: SBA Covid Deployment and AI QuickBooks Reconciliation.
+Chose against: AI Sales Agent (standalone), AI Competitive Intelligence, SBA Covid Deployment, AI QuickBooks Reconciliation.
 
-Who is worse off: SBA is the best "crisis execution under pressure" story and the only government-scale story. Cutting it means visitors do not see evidence of cross-company coordination at $5B scale. QuickBooks is the best "trust-first AI architecture" story. Cutting it means visitors do not see evidence of client consulting work or the read-only design philosophy. Both can be added in V2 or referenced in the About page timeline.
+Who is worse off: AI Sales Agent's 45 pp lift folds into the CH10 Turnaround as a proof point; the metric is not lost. AI Competitive Intelligence is replaced by Redline, which proves the same capability (production AI build, live proof link) plus product thinking (user research, PRD with trade offs, trust first architecture, 68 tests). SBA and QuickBooks can be referenced in the About page timeline.
 
 **Call 5: CanadaHelps named and framed, not buried.** (ADR 0008)
 
@@ -158,11 +168,11 @@ Chose against: Leading with metrics and delaying the company name.
 
 Who is worse off: Nobody, if the framing works. If it does not (if the visitor reads "CanadaHelps" and closes the tab before reaching the numbers), this call is wrong. The CanadaHelps test (Section 4) checks this.
 
-**Call 6: Failure arcs in case studies.** (ADR 0009)
+**Call 6: One deep failure arc, not two.** (ADR 0009)
 
-Chose: At least two case studies include a visible "I was wrong" beat with specific numbers and consequences. Ensemble carries the CH1→CH2→CH3 three-part arc.
+Chose: Ensemble carries the CH1→CH2→CH3 three-part failure arc. No forced failure in other case studies. One deep, multi-beat arc is more authentic than two thin ones.
 
-Chose against: Clean success stories only.
+Chose against: Requiring two failure arcs (original decision) and clean success stories only.
 
 Who is worse off: Visitors who scan quickly and see a "revenue fell 40% below target" line out of context. The case study must be structured so the failure reads as the setup for the recovery, not as the headline. If a visitor reads only the failure and not the recovery, the structure failed.
 
@@ -192,7 +202,7 @@ Who is worse off: Non-technical contributors who might want to update the site w
 
 **A standalone Projects or GitHub page.** Executive portfolios do not look like developer portfolios (research/summary.md, Section 3). GitHub appears as proof links inside relevant case studies and as a social icon. That is enough. The hiring manager does not browse commit history.
 
-**SBA Covid and QuickBooks Reconciliation case studies.** Cut from V1 to keep the case study count at four (ADR 0006). Both stories are preserved in the story bank and can be added when the site grows.
+**AI Sales Agent, AI Competitive Intelligence, SBA Covid, and QuickBooks Reconciliation case studies.** Cut from V1 (ADR 0006). AI Sales Agent's 45 pp lift folds into the CH10 Turnaround case study. AI Competitive Intelligence is replaced by Redline. All stories are preserved in the story bank and can be added as V2 case studies.
 
 **A database, auth system, or server runtime.** Nothing in V1 requires them (ADR 0010). The contact page uses mailto or a third party form service.
 
@@ -237,6 +247,7 @@ All decisions referenced in this PRD are recorded as Architecture Decision Recor
 | 0009 | Failure arcs in case studies |
 | 0010 | Supabase deferred to V2 |
 | 0011 | Living validator, not static, not hub |
+| 0012 | Structural SEO built in from the start |
 
 ---
 

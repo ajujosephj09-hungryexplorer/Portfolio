@@ -1,10 +1,10 @@
 # Portfolio — Project Instructions
 
 ## Purpose
-Land interviews at Layer 1/2/3 target firms. Compound Substack, LinkedIn, and GitHub into one distribution hub that builds brand value over time.
+Land interviews at Layer 1/2/3 target firms. V1 is a credibility validator. Compound into a distribution hub in V2.
 
 ## Stack (settled, not open for reinterpretation)
-- Next.js + Supabase (auth and database) + Vercel
+- Next.js static export on Vercel. No Supabase. No database. No auth. No server runtime. (ADR 0010)
 - Ask before adding any dependency
 
 ## External accounts (canonical URLs)

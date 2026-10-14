@@ -35,7 +35,7 @@ Next.js static export on Vercel. No Supabase. No database. No auth. Contact via 
 A page that works without homepage context. Every case study is a standalone page: its own context line ("who is Aju"), its own metrics, its own CTA. Designed for the forwarded link use case (panel hiring, referrals). See ADR 0005.
 
 ## V1 Case Studies
-Four case studies, each proving a distinct capability. (1) Ensemble: 0 to 1 incubation. (2) AI Sales Agent: AI as commercial lever. (3) HPCC: platform commercialization. (4) AI Competitive Intelligence: production AI build. SBA Covid and QuickBooks Reconciliation cut from V1. See ADR 0006.
+Four case studies, each proving a distinct capability. (1) CanadaHelps Turnaround (CH10): executive judgment, restructuring, AI as operating lever. (2) Ensemble: 0 to 1 incubation, failure arc. (3) HPCC: platform commercialization. (4) Redline: AI product thinking, research to production. AI Sales Agent folds into CH10 as a proof point. AI Competitive Intelligence replaced by Redline. See ADR 0006.
 
 ## Takeaway Line
 The one sentence a hiring manager should be able to say after 60 seconds on the homepage: "He's built products from zero and run the P&L to scale them." This is the positioning anchor. AI is the proof, not the headline. See ADR 0007.

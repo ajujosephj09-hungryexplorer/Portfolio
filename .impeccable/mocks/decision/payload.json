@@ -1,0 +1,116 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned The Operator's Ledger (Bloomberg Terminal). Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Operator's Ledger",
+      "kicker": "THE ROLL",
+      "lineage": "Bloomberg terminal information density",
+      "thesis": "The portfolio that proves P&L fluency by displaying it. Not a story about an operator; the interface of one.",
+      "palette": ["#1C1C1C", "#F7F7F5", "#0052CC", "#D4A853"],
+      "materials": ["systematic grid", "tab-separated regions", "metric tiles"],
+      "viewport": "Name in medium weight, positioning line below, four metric tiles spanning full width (one per case study, each showing headline number and one-line label), CTA below. No hero image. The numbers ARE the hero.",
+      "risk": "Reads cold or sterile if type is too small or spacing too tight. Density must be purposeful, not overwhelming.",
+      "raised": [
+        {"from": "Neubrutalist", "raise": "Grid discipline: every element snaps to a visible grid."},
+        {"from": "Starship panel", "raise": "Flat commitment to solid color. No gradients, no glass."},
+        {"from": "Deep dive", "raise": "Single vertical axis ruling all content below the fold."},
+        {"from": "Cel animation", "raise": "One warm amber accent as the single focal element amid neutral density."},
+        {"from": "Risograph", "raise": "Limited palette: three colors maximum (ground, type, functional accent)."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "The Deal Memo",
+      "kicker": "IMPECCABLE'S PICK",
+      "lineage": "PE/VC investment memorandum format",
+      "thesis": "The format the audience reads fifty times a week. Thesis at the top, evidence below, structured for the cross-check scan.",
+      "palette": ["#FAFAFA", "#111827", "#1D4ED8"],
+      "materials": ["horizontal rules", "pull-quote metrics", "section dividers"],
+      "viewport": "Name and title, one-sentence thesis, then immediately into the first case study summary with headline metric. Clean serif headings, systematic sans body.",
+      "risk": "The direction most runs in this category land on. Familiar and effective, but could be indistinguishable from a well-designed LinkedIn long-form post."
+    },
+    {
+      "id": "challenger-night-flight",
+      "label": "Night Flight Six-Pack",
+      "verdict": "competitive",
+      "lineage": "Aircraft instrument panel cross-check",
+      "thesis": "Four instruments, each showing one truth about the operator. The cross-check sweep is the reading order.",
+      "palette": ["#0A0A0A", "#E8E8E8", "#2DD4A0", "#D4A853"],
+      "materials": ["matte black panel", "luminous markings", "damped needle motion"],
+      "viewport": "Four gauge-like regions, each owning one case study metric and capability label. Matte black ground, luminous white markings, one green confirmation accent.",
+      "case": "Holds audience identification through the operator metaphor (cross-checking, calm under pressure). Loses product clarity because matte black aviation aesthetic fights readable long-form decision narratives on inner pages.",
+      "risk": "Aviation aesthetic is niche. Works for the landing page but may not extend to text-heavy About and Case Study pages.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack.webp"
+    },
+    {
+      "id": "challenger-neubrutalist",
+      "label": "Neubrutalist Grid",
+      "verdict": "declined",
+      "lineage": "Award-grade neubrutalist product site",
+      "palette": ["#F5D64C", "#E8452C", "#1B2A52", "#F3EAD8"],
+      "case": "Reads as designer/creative culture. A VP at a PE-backed B2B SaaS company would find this jarring.",
+      "kept": "Grid discipline: every element snaps to a visible grid.",
+      "hero": "https://impeccable.style/worlds/cards/neubrutalist-award-grade-hero.webp"
+    },
+    {
+      "id": "challenger-starship",
+      "label": "Starship Panel",
+      "verdict": "declined",
+      "lineage": "Pill-cornered elbow-frame console",
+      "palette": ["#000000", "#C4B5FD", "#FDB99B", "#FDE68A"],
+      "case": "Sci-fi aesthetic with zero overlap with executive business culture.",
+      "kept": "Flat commitment to solid color blocks, no gradients.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-elbow-panel-console-hero.webp"
+    },
+    {
+      "id": "challenger-deep-dive",
+      "label": "Mesophotic Deep Dive",
+      "verdict": "declined",
+      "lineage": "Volcanic island wall dive profile",
+      "palette": ["#0A1628", "#E8E8E8", "#22D3EE"],
+      "case": "Beautiful but too metaphorical for executive due diligence. The metaphor sits between visitor and information.",
+      "kept": "Single vertical axis ruling every line of content.",
+      "hero": "https://impeccable.style/worlds/cards/rivers-tides-ocean-depths-mesophotic-deep-dive-hero.webp"
+    },
+    {
+      "id": "challenger-cel-dawn",
+      "label": "Multiplane Cel Dawn",
+      "verdict": "declined",
+      "lineage": "Hand-painted parallax forest layers",
+      "palette": ["#2D3B2D", "#F5EDE0", "#D4A853"],
+      "case": "Whimsical and artistic. Reads as creative/animation culture, not executive operator culture.",
+      "kept": "One warm accent element as the single focal point.",
+      "hero": "https://impeccable.style/worlds/cards/cinema-cinematography-editing-multiplane-cel-dawn-hero.webp"
+    },
+    {
+      "id": "challenger-risograph",
+      "label": "Risograph Web System",
+      "verdict": "declined",
+      "lineage": "Spot-ink misregistration on paper",
+      "palette": ["#F5E6D3", "#FF3366", "#0000C0"],
+      "case": "Print/design culture with zero connection for a B2B hiring manager.",
+      "kept": "Limited palette discipline: two or three colors maximum.",
+      "hero": "https://impeccable.style/worlds/cards/risograph-web-system-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "Minimal white background, clean sans-serif, hero with name and title, grid of project cards. What every portfolio template ships.",
+    "palette": ["#FFFFFF", "#111827", "#2563EB"],
+    "materials": ["clean grid", "card thumbnails", "monochrome accent"],
+    "viewport": "Name, title, one-line bio, then a 2x2 grid of project cards with hover effects.",
+    "risk": "Indistinguishable from the competition by design. Every portfolio builder ships this."
+  },
+  "steer": true
+}

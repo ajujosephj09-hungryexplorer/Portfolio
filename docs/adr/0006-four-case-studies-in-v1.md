@@ -1,38 +1,42 @@
 # ADR 0006: Four Case Studies in V1
 
-**Status:** Accepted
+**Status:** Accepted (revised 2026-10-13)
 **Date:** 2026-10-13
 
 ## Decision
 
-V1 ships with four case studies. The two cut from the original six are SBA Covid Loan Deployment (#4) and AI QuickBooks Reconciliation (#6).
+V1 ships with four case studies. Two CanadaHelps stories (turnaround and incubation), one LexisNexis story, and one Mapleview AI product.
 
 ### V1 case studies
 
-1. **CanadaHelps Ensemble** — 0 to 1 SaaS incubation. $432K ARR, 200+ customers, 86% PLG.
-2. **AI Sales Agent** — AI as a commercial operating lever. 5% to 45% lead conversion (45 pp lift).
-3. **HPCC Platform Commercialization** — Internal tech to $50M+ business. 100+ enterprise clients.
-4. **AI Competitive Intelligence System** — Production AI build. Live at competitive-analysis-ui.vercel.app.
+1. **CanadaHelps Turnaround** (CH10) — Executive transformation. Inherited 4 disconnected teams, built coherent operating strategy, restructured into pods, deployed AI as operating lever (45 pp conversion lift). Retention 67% to 83%, stickiness 25% to 77%, NPS 5 to 33.
+2. **CanadaHelps Ensemble** — 0 to 1 SaaS incubation. $432K ARR, 200+ customers, 86% PLG. Includes CH1→CH2→CH3 failure arc.
+3. **HPCC Platform Commercialization** — Internal tech to $50M+ business. 100+ enterprise clients. 25K+ developer community.
+4. **Redline** — AI contract review product. Research driven (71% freelancer non payment), trust first architecture (every flag cites its source), full stack execution (auth, database, 68 tests, 13 routes). Live at redline-kappa-umber.vercel.app.
 
 ### What each proves
 
-- Ensemble: 0 to 1 product incubation with P&L accountability
-- AI Sales Agent: AI deployed as a business lever, not a demo
+- CH10 Turnaround: Executive judgment, team restructuring, AI as operating lever, P&L stewardship
+- Ensemble: 0 to 1 product incubation, failure and recovery, unit economics thinking
 - HPCC: Platform commercialization and enterprise GTM from scratch
-- AI Competitive Intelligence: Hands on builder, production AI, live proof link
+- Redline: AI product thinking (research to PRD to production), trust first architecture, full stack execution
 
 ### Cut and why
 
-- **SBA Covid Deployment:** Impressive scale ($5B) but thin decision narrative ("triaged scope, shipped fast"). Demonstrates crisis execution, not strategic thinking. No P&L ownership. Fiserv story, not an Aju story.
-- **AI QuickBooks Reconciliation:** Strong decision narrative but small scope relative to the other four. Reads as a side project next to $27M P&L and $50M platform stories.
+- **AI Sales Agent:** The 45 pp conversion lift folds into the CH10 Turnaround as a proof point ("AI as operating lever"). Does not need a standalone case study; the metric is strongest when it demonstrates a lever within a transformation narrative, not as an isolated AI deployment story.
+- **AI Competitive Intelligence:** Replaced by Redline, which proves the same capability (production AI build, live proof link) plus product thinking (user research, PRD with trade offs, trust first architecture, 68 tests). AI CI is a tool; Redline is a full product.
+- **SBA Covid Deployment:** Impressive scale ($5B) but thin decision narrative. Demonstrates crisis execution, not strategic thinking.
+- **AI QuickBooks Reconciliation:** Strong decision narrative but small scope relative to the other four.
 
 ## Alternatives
 
-1. **Ship all six.** Walls of text are the #2 cited portfolio issue (research/summary.md, Issue #2: 6/8 sources). Six case studies in a 5 to 10 minute visit means the visitor reads 2 to 3 and skips the rest. You lose control of which ones they see.
-2. **Ship three.** Cuts range too thin. Four covers the four distinct capabilities: 0 to 1, AI as lever, enterprise GTM, production AI build.
+1. **Keep AI Sales Agent as standalone.** The 45 pp lift is attention grabbing but the decision narrative is thin (could have hired reps, chose AI). More powerful as a beat within the turnaround story than as a standalone page.
+2. **Keep AI Competitive Intelligence instead of Redline.** AI CI has a live proof link but lacks the product thinking depth. Redline has research, a PRD with documented trade offs, a trust first architecture, and 68 tests. Both have live deployments.
+3. **Combine CH10 and Ensemble into one mega case study.** Would be too long for a 5 to 10 minute read. They prove different things (turnaround vs. builder) and are stronger as separate narratives.
 
 ## Consequences
 
-- Four case studies, four distinct capabilities. No overlap in what each proves.
-- SBA and QuickBooks are not deleted. They can be referenced in the About page career timeline and added as V2 case studies if needed.
-- The AI Competitive Intelligence case study is the only one with a live proof link (deployed app + GitHub repo). It must be positioned to maximize this advantage.
+- Two CanadaHelps case studies out of four. This is intentional: CanadaHelps is the defining experience ($27M+ P&L, board governance, 0 to 1, AI deployment). Two stories give it proportional weight.
+- The AI Sales Agent's 45 pp lift does not disappear. It becomes a proof point within the CH10 Turnaround narrative.
+- Redline has a live proof link (redline-kappa-umber.vercel.app) and a GitHub repo, same as AI CI did.
+- Cut stories can be referenced in the About page timeline and added as V2 case studies.
