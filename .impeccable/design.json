@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15T00:00:00Z",
+  "title": "Design System: Aju Joseph John Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Near-White Ground",
+        "canonical": "#FAFAFA",
+        "tonalRamp": ["#1A1A1A", "#333333", "#5C5C5C", "#858585", "#ADADAD", "#D6D6D6", "#F0F0F0", "#FAFAFA"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Near-Black Ink",
+        "canonical": "#111827",
+        "tonalRamp": ["#111827", "#1F2937", "#374151", "#4B5563", "#6B7280", "#9CA3AF", "#D1D5DB", "#F3F4F6"]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Restrained Blue",
+        "canonical": "#1D4ED8",
+        "tonalRamp": ["#1E3A5F", "#1D4ED8", "#2563EB", "#3B82F6", "#60A5FA", "#93C5FD", "#BFDBFE", "#DBEAFE"]
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Secondary Gray",
+        "canonical": "#4B5563",
+        "tonalRamp": ["#111827", "#1F2937", "#374151", "#4B5563", "#6B7280", "#9CA3AF", "#D1D5DB", "#F3F4F6"]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule Gray",
+        "canonical": "#D1D5DB",
+        "tonalRamp": ["#111827", "#1F2937", "#374151", "#4B5563", "#6B7280", "#9CA3AF", "#D1D5DB", "#F3F4F6"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero name. One instance per page. Libre Baskerville normal weight." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings. Libre Baskerville bold." },
+      "title": { "displayName": "Title", "purpose": "Case study titles within sections. Libre Baskerville bold." },
+      "body": { "displayName": "Body", "purpose": "Running text. Source Sans 3 regular. Max line length capped at 65ch." },
+      "label": { "displayName": "Label", "purpose": "Metric labels, nav links, CTA text. Source Sans 3 semibold." },
+      "metric": { "displayName": "Metric", "purpose": "Pull-quote sized outcome numbers. Libre Baskerville bold with tabular figures." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "thesis-enter", "value": "0.8s cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Hero thesis entrance. Fades up 12px. Respects prefers-reduced-motion." },
+      { "name": "thesis-enter-delay", "value": "0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s", "purpose": "Metric strip entrance, 150ms after hero." },
+      { "name": "transition-colors", "value": "color 150ms, background-color 150ms", "purpose": "Default state transition for links, buttons, nav items." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled CTA button with inline SVG icon. Used for email contact actions.",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg> Email</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #1D4ED8; color: #FFFFFF; padding: 14px 24px; font-size: 0.875rem; font-weight: 600; font-family: 'Source Sans 3', system-ui, sans-serif; text-decoration: none; border: none; border-radius: 0; cursor: pointer; transition: background-color 150ms; } .ds-btn-primary:hover { background: #1E40AF; } .ds-btn-primary:focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined CTA button with inline SVG icon. Used for LinkedIn and secondary actions.",
+      "html": "<button class=\"ds-btn-secondary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg> LinkedIn</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: transparent; color: #111827; padding: 14px 24px; font-size: 0.875rem; font-weight: 600; font-family: 'Source Sans 3', system-ui, sans-serif; text-decoration: none; border: 1px solid #111827; border-radius: 0; cursor: pointer; transition: color 150ms, background-color 150ms; } .ds-btn-secondary:hover { background: #111827; color: #FAFAFA; } .ds-btn-secondary:focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Top navigation bar with serif wordmark, text links, and social icon group separated by a rule border.",
+      "html": "<nav class=\"ds-nav\"><div class=\"ds-nav-inner\"><a class=\"ds-nav-wordmark\" href=\"/\">Aju Joseph John</a><div class=\"ds-nav-links\"><a class=\"ds-nav-link\" href=\"/#case-studies\">Case Studies</a><a class=\"ds-nav-link\" href=\"/about\">About</a><a class=\"ds-nav-link\" href=\"/contact\">Contact</a><div class=\"ds-nav-social\"><a class=\"ds-nav-icon\" href=\"#\" aria-label=\"LinkedIn\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg></a></div></div></div></nav>",
+      "css": ".ds-nav { width: 100%; border-bottom: 1px solid #D1D5DB; } .ds-nav-inner { max-width: 72rem; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; } .ds-nav-wordmark { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.125rem; font-weight: 700; color: #111827; text-decoration: none; transition: color 150ms; } .ds-nav-wordmark:hover { color: #1D4ED8; } .ds-nav-links { display: flex; align-items: center; gap: 32px; } .ds-nav-link { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; text-decoration: none; transition: color 150ms; } .ds-nav-link:hover { color: #111827; } .ds-nav-social { display: flex; align-items: center; gap: 16px; margin-left: 16px; padding-left: 16px; border-left: 1px solid #D1D5DB; } .ds-nav-icon { color: #4B5563; transition: color 150ms; } .ds-nav-icon:hover { color: #111827; }"
+    },
+    {
+      "name": "Metric Tile",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Large serif number with small sans label. Used in metric strips and case study sidebars.",
+      "html": "<div class=\"ds-metric-tile\"><p class=\"ds-metric-value\">$432K</p><p class=\"ds-metric-label\">ARR from Zero</p></div>",
+      "css": ".ds-metric-tile { } .ds-metric-value { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.875rem, 4vw, 2.25rem); font-weight: 700; color: #111827; line-height: 1.1; font-variant-numeric: tabular-nums; margin: 0; } .ds-metric-label { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; margin: 4px 0 0 0; }"
+    },
+    {
+      "name": "Case Study Block",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Two-column case study entry with title, company, teaser, action links, and right-aligned metric.",
+      "html": "<div class=\"ds-case-study\"><div class=\"ds-case-study-content\"><h3 class=\"ds-case-study-title\"><a href=\"#\">Ensemble</a></h3><p class=\"ds-case-study-company\">CanadaHelps: $260M+ payments platform.</p><p class=\"ds-case-study-teaser\">Took a product from idea to 200+ customers and $432K ARR in under 18 months.</p><div class=\"ds-case-study-actions\"><a class=\"ds-case-study-link\" href=\"#\">Read the case study</a></div></div><div class=\"ds-case-study-metric\"><p class=\"ds-metric-value\">$432K</p><p class=\"ds-metric-label\">ARR from Zero</p></div></div>",
+      "css": ".ds-case-study { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: start; padding: 48px 0; } .ds-case-study-content { } .ds-case-study-title { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.25rem, 2vw, 1.5rem); font-weight: 700; color: #111827; margin: 0; } .ds-case-study-title a { color: #111827; text-decoration: none; transition: color 150ms; } .ds-case-study-title a:hover { color: #1D4ED8; } .ds-case-study-company { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; line-height: 1.625; margin: 8px 0 0 0; } .ds-case-study-teaser { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1rem; color: #111827; line-height: 1.625; max-width: 65ch; margin: 16px 0 0 0; } .ds-case-study-actions { margin: 16px 0 0 0; display: flex; align-items: center; gap: 16px; } .ds-case-study-link { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #1D4ED8; font-weight: 600; text-decoration: none; } .ds-case-study-link:hover { text-decoration: underline; } .ds-case-study-metric { text-align: right; } .ds-case-study-metric .ds-metric-value { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.875rem, 4vw, 2.25rem); font-weight: 700; color: #111827; font-variant-numeric: tabular-nums; margin: 0; } .ds-case-study-metric .ds-metric-label { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; margin: 4px 0 0 0; }"
+    },
+    {
+      "name": "Horizontal Rule",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Primary structural divider between all content sections.",
+      "html": "<hr class=\"ds-rule\" />",
+      "css": ".ds-rule { border: none; border-top: 1px solid #D1D5DB; margin: 0; }"
+    },
+    {
+      "name": "Footer",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Minimal footer with serif name link and social icon row.",
+      "html": "<footer class=\"ds-footer\"><div class=\"ds-footer-inner\"><a class=\"ds-footer-name\" href=\"/\">Aju Joseph John</a><div class=\"ds-footer-icons\"><a class=\"ds-footer-icon\" href=\"#\" aria-label=\"LinkedIn\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg></a></div></div></footer>",
+      "css": ".ds-footer { width: 100%; border-top: 1px solid #D1D5DB; margin-top: 96px; } .ds-footer-inner { max-width: 72rem; margin: 0 auto; padding: 32px 24px; display: flex; align-items: center; justify-content: space-between; } .ds-footer-name { font-family: 'Libre Baskerville', Georgia, serif; font-size: 0.875rem; color: #4B5563; text-decoration: none; transition: color 150ms; } .ds-footer-name:hover { color: #111827; } .ds-footer-icons { display: flex; align-items: center; gap: 20px; } .ds-footer-icon { color: #4B5563; transition: color 150ms; } .ds-footer-icon:hover { color: #111827; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Deal Memo",
+    "overview": "The visual system treats the portfolio as an investment memo: a document format so familiar to the target audience (hiring managers, PE/VC search firms) that the design disappears and only the evidence registers. Every surface is a ruled section of a single continuous document. The density is high but the texture is quiet. White ground, dark type, one accent color, horizontal rules as the only structural ornament.\n\nThe system is deliberately anti-portfolio. No project thumbnail grids, no hover animations on cards, no gradient heroes, no glass or glow effects. The only motion is a single entrance animation on the hero thesis block, which respects prefers-reduced-motion. The only color beyond the grayscale axis is one restrained blue used exclusively for interactive affordances: links, primary CTAs, focus rings, and text selection highlight.",
+    "keyCharacteristics": [
+      "Ruled sections as the primary spatial and visual device",
+      "Pull-quote sized metrics in the heading serif, with tabular figures",
+      "Single blue accent on near-white ground; no decorative color",
+      "Serif/sans pairing that reads as institutional, not creative",
+      "Zero border-radius on all interactive elements"
+    ],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "The only chromatic color in the system is #1D4ED8. If a new surface needs a second color, the system does not support it; reconsider the surface.", "section": "colors" },
+      { "name": "The Metric Typography Rule", "body": "Numbers that represent outcomes (revenue, retention, ARR) are always set in the serif face at pull-quote scale with tabular figures enabled. They are never set in the sans body face.", "section": "typography" },
+      { "name": "The No Shadow Rule", "body": "No surface in this system casts a shadow. Hierarchy comes from typography scale and horizontal rules alone. If a new component needs perceived depth, use a border in rule gray, not a shadow.", "section": "elevation" },
+      { "name": "The Sharp Corner Rule", "body": "Border-radius is zero on every designed element. Rounded corners signal a different visual world (consumer, friendly, approachable). This system signals institutional authority through sharp geometry.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do use horizontal rules (<hr>) as the primary section divider. Every content transition gets one.",
+      "Do set outcome numbers in the serif metric style with tabular figures enabled.",
+      "Do keep body text within max-w-prose or max-w-2xl to maintain readable line lengths.",
+      "Do use inline SVGs for all icons. Size them consistently: 16px in buttons and footer, 18px in nav.",
+      "Do respect prefers-reduced-motion by disabling entrance animations."
+    ],
+    "donts": [
+      "Don't add a second chromatic color. The palette is monochrome plus one blue.",
+      "Don't add border-radius to any designed element. Sharp corners are the system.",
+      "Don't add box-shadows or elevation effects. This is a flat ruled-document system.",
+      "Don't use gradients, glass, glow, or decorative background color on any surface.",
+      "Don't use icon fonts or external icon libraries. All icons are inline SVG.",
+      "Don't set metric numbers in the sans body face or at body text scale."
+    ]
+  }
+}
