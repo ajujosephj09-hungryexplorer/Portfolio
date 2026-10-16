@@ -56,7 +56,7 @@ export default function CaseStudyLayout({
             author: {
               '@type': 'Person',
               name: 'Aju Joseph John',
-              url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
+              url: 'https://ajujosephjohn.com',
             },
             publisher: {
               '@type': 'Person',
@@ -86,13 +86,13 @@ export default function CaseStudyLayout({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
+                item: 'https://ajujosephjohn.com',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Case Studies',
-                item: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/#case-studies',
+                item: 'https://ajujosephjohn.com/#case-studies',
               },
               {
                 '@type': 'ListItem',

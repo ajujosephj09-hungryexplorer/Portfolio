@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import CaseStudyLayout from '../../../components/CaseStudyLayout'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://portfolio-git-main-aju-joseph-johns-projects.vercel.app'),
+  metadataBase: new URL('https://ajujosephjohn.com'),
   title: 'Building a $150M Banking Intelligence Portfolio at Fiserv',
   description:
     'How Aju Joseph John led a ~$150M banking intelligence portfolio at Fiserv serving ~4,000 banks and credit unions. Built Abiliti from scratch to $24.9M ARR, led SBA PPP crisis response disbursing ~$5B, and drove API monetization across 500+ banks.',
@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     title: 'Building a $150M Banking Intelligence Portfolio at Fiserv | Aju Joseph John',
     description:
       'Led a ~$150M banking intelligence portfolio at Fiserv. Built Abiliti 0 to 1 ($24.9M ARR). Led SBA PPP crisis response (~$5B disbursed). Drove payment API monetization (500+ banks).',
-    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/fiserv-portfolio',
+    url: 'https://ajujosephjohn.com/case-studies/fiserv-portfolio',
   },
   alternates: {
-    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/fiserv-portfolio',
+    canonical: 'https://ajujosephjohn.com/case-studies/fiserv-portfolio',
   },
 }
 
@@ -290,7 +290,7 @@ export default function FiservPortfolioPage() {
         dateModified: '2026-10-16',
         description:
           'How Aju Joseph John led a ~$150M banking intelligence portfolio at Fiserv serving ~4,000 banks and credit unions. Built Abiliti from scratch to $24.9M ARR. Led SBA PPP crisis response disbursing ~$5B. Drove API monetization across 500+ banks.',
-        url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/fiserv-portfolio',
+        url: 'https://ajujosephjohn.com/case-studies/fiserv-portfolio',
       }}
     />
   )

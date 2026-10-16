@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     title: 'HPCC Platform Commercialization at LexisNexis | Aju Joseph John',
     description:
       'Turned an internal big data platform at LexisNexis into a $50M+ market facing business. 100+ enterprise clients. 25,000+ developer community. 12 business cases totaling $38M in investment.',
-    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/hpcc-platform',
+    url: 'https://ajujosephjohn.com/case-studies/hpcc-platform',
   },
   alternates: {
-    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/hpcc-platform',
+    canonical: 'https://ajujosephjohn.com/case-studies/hpcc-platform',
   },
 }
 
@@ -241,7 +241,7 @@ export default function HpccPlatformPage() {
         dateModified: '2026-10-15',
         description:
           'How Aju Joseph John turned an internal big data platform at LexisNexis into a $50M+ market facing business. 100+ enterprise clients. 25,000+ developer community.',
-        url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/hpcc-platform',
+        url: 'https://ajujosephjohn.com/case-studies/hpcc-platform',
       }}
     />
   )

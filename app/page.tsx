@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     title: 'Aju Joseph John | Product & Commercial Leader',
     description:
       'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. $27M+ P&L, $150M portfolio, five production AI systems.',
-    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
+    url: 'https://ajujosephjohn.com',
   },
   alternates: {
-    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
+    canonical: 'https://ajujosephjohn.com',
   },
 }
 
@@ -85,7 +85,7 @@ export default function HomePage() {
             '@type': 'Person',
             name: 'Aju Joseph John',
             jobTitle: 'Product & Commercial Leader',
-            url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
+            url: 'https://ajujosephjohn.com',
             sameAs: [
               'https://www.linkedin.com/in/aju-joseph-john/',
               'https://github.com/ajujosephj09-hungryexplorer',
@@ -121,7 +121,7 @@ export default function HomePage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
+                item: 'https://ajujosephjohn.com',
               },
             ],
           }),

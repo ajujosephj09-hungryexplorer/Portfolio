@@ -2,23 +2,23 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    { url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app', lastModified: new Date() },
-    { url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/about', lastModified: new Date() },
-    { url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/contact', lastModified: new Date() },
+    { url: 'https://ajujosephjohn.com', lastModified: new Date() },
+    { url: 'https://ajujosephjohn.com/about', lastModified: new Date() },
+    { url: 'https://ajujosephjohn.com/contact', lastModified: new Date() },
     {
-      url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
+      url: 'https://ajujosephjohn.com/case-studies/canadahelps-turnaround',
       lastModified: new Date(),
     },
     {
-      url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/fiserv-portfolio',
+      url: 'https://ajujosephjohn.com/case-studies/fiserv-portfolio',
       lastModified: new Date(),
     },
     {
-      url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/hpcc-platform',
+      url: 'https://ajujosephjohn.com/case-studies/hpcc-platform',
       lastModified: new Date(),
     },
     {
-      url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/redline',
+      url: 'https://ajujosephjohn.com/case-studies/redline',
       lastModified: new Date(),
     },
   ]

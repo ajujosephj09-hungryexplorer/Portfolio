@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     title: 'Contact | Aju Joseph John',
     description:
       'Reach Aju Joseph John. Email, LinkedIn, and links to writing and code.',
-    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/contact',
+    url: 'https://ajujosephjohn.com/contact',
   },
   alternates: {
-    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/contact',
+    canonical: 'https://ajujosephjohn.com/contact',
   },
 }
 

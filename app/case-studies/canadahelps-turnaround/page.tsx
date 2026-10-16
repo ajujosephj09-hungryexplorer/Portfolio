@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     title: 'B2B Payments Business Turnaround: From Silos to $266M Processing Revenue | Aju Joseph John',
     description:
       'Led a B2B payments business turnaround at CanadaHelps. Restructured four teams into cross functional pods, deployed AI as an operating lever. Processing revenue $230M to $266M. NPS 5 to 33.',
-    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
+    url: 'https://ajujosephjohn.com/case-studies/canadahelps-turnaround',
   },
   alternates: {
-    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
+    canonical: 'https://ajujosephjohn.com/case-studies/canadahelps-turnaround',
   },
 }
 
@@ -286,7 +286,7 @@ export default function CanadaHelpsTurnaroundPage() {
         dateModified: '2026-10-15',
         description:
           'How Aju Joseph John led a B2B payments business turnaround at CanadaHelps, restructured four teams into cross functional pods, and deployed AI as an operating lever. Processing revenue $230M to $266M. NPS 5 to 33.',
-        url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
+        url: 'https://ajujosephjohn.com/case-studies/canadahelps-turnaround',
       }}
     />
   )
