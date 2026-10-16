@@ -62,7 +62,7 @@ const caseStudies = [
 
 const metrics = [
   { value: '$60M+', label: 'Products Built 0→1' },
-  { value: '$230M → $266M', label: 'Revenue Grown' },
+  { value: '$266M', label: 'Revenue Grown from $230M' },
   { value: '~$150M', label: 'P&L Owned' },
   { value: '3', label: 'Live AI Systems' },
 ]
