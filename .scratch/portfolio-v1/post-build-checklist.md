@@ -56,14 +56,24 @@ Open Chrome DevTools → Lighthouse tab. Run on each page type (landing, one cas
 - Accessibility > 90
 - SEO score green
 
-## 8. Commit any fixes
+## 8. Replace headshot placeholder
+
+The landing page has a gray placeholder box in the Career Scope section. Replace it with your real headshot:
+
+1. Drop your image into `public/` (e.g., `public/headshot.jpg`)
+2. In `app/page.tsx`, replace the two placeholder `<div>`s (mobile 128x128 and desktop 192x192) with `<img>` tags pointing to `/headshot.jpg`
+3. Add `alt="Aju Joseph John"` for accessibility
+
+The About page has no headshot by design.
+
+## 9. Commit any fixes
 
 If the finish reviewer or manual checks produced fixes, commit and push. Vercel auto-deploys.
 
-## 9. Update LinkedIn
+## 10. Update LinkedIn
 
 Point the "Visit my website" link on LinkedIn to the Vercel URL.
 
-## 10. Monitor Google indexing
+## 11. Monitor Google indexing
 
 After 1-2 weeks, Google "Aju Joseph John" and check if the portfolio appears on page 1. If not, submit the URL via Google Search Console.
