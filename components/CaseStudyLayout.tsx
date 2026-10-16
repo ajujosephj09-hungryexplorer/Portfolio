@@ -106,8 +106,15 @@ export default function CaseStudyLayout({
       />
 
       <article className="mx-auto max-w-content px-6">
+        {/* Breadcrumb */}
+        <p className="pt-8 text-sm text-secondary">
+          <a href="/#case-studies" className="text-secondary no-underline hover:text-ink transition-colors">Case Studies</a>
+          <span className="mx-2 text-rule">/</span>
+          <span>{title}</span>
+        </p>
+
         {/* IdentityBar */}
-        <p className="pt-8 text-sm text-secondary leading-relaxed">
+        <p className="mt-4 text-sm text-secondary leading-relaxed">
           Aju Joseph John is a product and commercial leader. 20 years across B2B SaaS, fintech, payments, and data platforms.
         </p>
 
@@ -205,7 +212,7 @@ export default function CaseStudyLayout({
               className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-blue-800 transition-colors"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <rect x="2" y="4" width="20" height="16" rx="0" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
               ajujosephj09@gmail.com

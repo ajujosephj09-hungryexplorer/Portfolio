@@ -254,27 +254,15 @@ export default function AboutPage() {
 
           <div className="mt-8 space-y-5 text-base text-ink leading-relaxed max-w-prose">
             <p>
-              <strong>Building businesses from zero.</strong> Taking a product from idea to revenue is where I come alive. I incubated CanadaHelps Ensemble from stealth to 200+ customers and $36K MRR in 12 months. I commercialized an internal big data platform into a $50M+ external business at LexisNexis. The 0 to 1 to N arc, discovery, launch, scale, is my core operating mode.
+              <strong>Building businesses from zero.</strong> I have done this four times across three companies. CanadaHelps Ensemble: stealth to 200+ customers and $36K MRR in 12 months. LexisNexis HPCC: internal platform to $50M+ external business. The 0 to 1 to N arc, discovery, launch, scale, is my core operating mode.
             </p>
 
             <p>
-              <strong>Owning the full stack: product, commercial, and P&L.</strong> I do not want to build the roadmap and hand it off. I want to own the revenue line, the pricing, the GTM motion, and the team that delivers it. At CanadaHelps (Canada's largest online giving and payments platform, $260M+ processing volume, $27M+ P&L) I owned all of it. Product leadership without commercial accountability feels incomplete.
+              <strong>Owning the full stack: product, commercial, and P&L.</strong> I do not build the roadmap and hand it off. I own the revenue line, the pricing, the GTM motion, and the team that delivers it. At CanadaHelps (Canada's largest online giving and payments platform, $260M+ processing volume, $27M+ P&L) I owned all of it. Product leadership and commercial accountability are inseparable.
             </p>
 
             <p>
-              <strong>AI applied to real commercial problems.</strong> Not AI for its own sake. AI that changes how a business acquires, qualifies, and serves customers. I built a human in the loop AI sales agent that lifted lead conversion by 45 points. I built a production grade AI competitive analysis system. I want to keep operating at this intersection.
-            </p>
-
-            <p>
-              <strong>Autonomy with accountability.</strong> Give me a business problem, a team, clear metrics, and decision rights. I will present to the board quarterly and own the result. That is where I do my best work, not in environments where every decision needs five sign offs.
-            </p>
-
-            <p>
-              <strong>Cross functional team building with real people development.</strong> I led an 8 person pod across Product, GTM, and Engineering. Five promotions in three years. eNPS of 44. I invest in people because that is how you build durable organizations, not just ship features.
-            </p>
-
-            <p>
-              <strong>Working across borders and cultures.</strong> India, Japan, U.S., Canada: 15+ years across four countries. I understand how to build and lead global teams, enter new markets, and navigate cross border complexity. This is a differentiator, not a footnote.
+              <strong>AI applied to real commercial problems.</strong> Not AI for its own sake. AI that changes how a business acquires, qualifies, and serves customers. I built a human in the loop AI sales agent that lifted lead conversion by 45 points. I shipped five production AI systems. This is the intersection where product leadership and applied AI compound.
             </p>
           </div>
         </section>
@@ -305,7 +293,7 @@ export default function AboutPage() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
-                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <rect x="2" y="4" width="20" height="16" rx="0" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
               ajujosephj09@gmail.com

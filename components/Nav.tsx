@@ -1,10 +1,24 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  const isActive = (href: string) => {
+    if (href === '/about') return pathname === '/about'
+    if (href === '/contact') return pathname === '/contact'
+    if (href === '/#case-studies') return pathname.startsWith('/case-studies')
+    return false
+  }
+
+  const navLinkClass = (href: string) =>
+    `text-sm no-underline transition-colors ${
+      isActive(href) ? 'text-ink font-semibold' : 'text-secondary hover:text-ink'
+    }`
 
   return (
     <nav className="w-full border-b border-rule" role="navigation" aria-label="Main navigation">
@@ -18,13 +32,13 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="/#case-studies" className="text-sm text-secondary hover:text-ink transition-colors no-underline">
+          <a href="/#case-studies" className={navLinkClass('/#case-studies')}>
             Case Studies
           </a>
-          <Link href="/about" className="text-sm text-secondary hover:text-ink transition-colors no-underline">
+          <Link href="/about" className={navLinkClass('/about')}>
             About
           </Link>
-          <Link href="/contact" className="text-sm text-secondary hover:text-ink transition-colors no-underline">
+          <Link href="/contact" className={navLinkClass('/contact')}>
             Contact
           </Link>
           <div className="flex items-center gap-4 ml-4 pl-4 border-l border-rule">
@@ -77,13 +91,13 @@ export default function Nav() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-rule px-6 py-4 flex flex-col gap-1">
-          <a href="/#case-studies" className="text-sm text-secondary hover:text-ink focus-visible:text-ink py-2 transition-colors no-underline" onClick={() => setMenuOpen(false)}>
+          <a href="/#case-studies" className={`${navLinkClass('/#case-studies')} py-2 focus-visible:text-ink`} onClick={() => setMenuOpen(false)}>
             Case Studies
           </a>
-          <Link href="/about" className="text-sm text-secondary hover:text-ink focus-visible:text-ink py-2 transition-colors no-underline" onClick={() => setMenuOpen(false)}>
+          <Link href="/about" className={`${navLinkClass('/about')} py-2 focus-visible:text-ink`} onClick={() => setMenuOpen(false)}>
             About
           </Link>
-          <Link href="/contact" className="text-sm text-secondary hover:text-ink focus-visible:text-ink py-2 transition-colors no-underline" onClick={() => setMenuOpen(false)}>
+          <Link href="/contact" className={`${navLinkClass('/contact')} py-2 focus-visible:text-ink`} onClick={() => setMenuOpen(false)}>
             Contact
           </Link>
           <div className="flex items-center gap-4 pt-2 border-t border-rule">
