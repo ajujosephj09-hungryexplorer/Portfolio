@@ -61,7 +61,7 @@ const caseStudies = [
 
 const metrics = [
   { value: '$230M → $266M', label: 'Processing Revenue', study: 'B2B Payments Turnaround' },
-  { value: '~$150M', label: 'Banking Portfolio', study: 'Fiserv' },
+  { value: '~$150M', label: 'Banking P&L', study: 'Fiserv' },
   { value: '$50M+', label: 'Platform Revenue', study: 'HPCC at LexisNexis' },
   { value: 'Live', label: 'AI Product Shipped', study: 'Redline' },
 ]

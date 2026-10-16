@@ -146,7 +146,7 @@ export default function AboutPage() {
         {/* ─── Career Narrative ─── */}
         <section className="pt-16 pb-12 md:pt-24 md:pb-16">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-ink leading-tight">
-            About Aju Joseph John
+            About
           </h1>
 
           <div className="mt-8 space-y-5 text-base text-ink leading-relaxed max-w-prose">
