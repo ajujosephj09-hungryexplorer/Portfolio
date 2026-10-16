@@ -34,6 +34,14 @@ export const metadata: Metadata = {
     description:
       'Product and commercial leader with 20 years building products from zero and running the P&L to scale them. B2B SaaS, fintech, payments, data platforms.',
     url: 'https://ajujosephjohn.com',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Aju Joseph John — Product & Commercial Leader',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://ajujosephjohn.com',
