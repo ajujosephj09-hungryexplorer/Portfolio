@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     description:
       'Reach Aju Joseph John. Email, LinkedIn, and links to writing and code.',
     url: 'https://ajujosephjohn.com/contact',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John — Product & Commercial Leader' }],
   },
   alternates: {
     canonical: 'https://ajujosephjohn.com/contact',

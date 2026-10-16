@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       'Led a ~$150M banking intelligence portfolio at Fiserv. Built Abiliti 0 to 1 ($24.9M ARR). Led SBA PPP crisis response (~$5B disbursed). Drove payment API monetization (500+ banks).',
     url: 'https://ajujosephjohn.com/case-studies/fiserv-portfolio',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John — Product & Commercial Leader' }],
   },
   alternates: {
     canonical: 'https://ajujosephjohn.com/case-studies/fiserv-portfolio',
