@@ -12,7 +12,7 @@ Page-specific meta title (names AI contract review), description, and OG tags. A
 
 **Blocked by:** 03 — Case study template + CanadaHelps Turnaround.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] Redline page renders using the case study template from ticket 03
 - [ ] Research-driven narrative present: 71% freelancer non-payment as the product origin

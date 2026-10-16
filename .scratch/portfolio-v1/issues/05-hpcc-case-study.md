@@ -8,7 +8,7 @@ Page-specific meta title (names LexisNexis and the commercialization outcome), d
 
 **Blocked by:** 03 — Case study template + CanadaHelps Turnaround.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] HPCC page renders using the case study template from ticket 03
 - [ ] Decision narrative shows the path from internal technology to $50M+ commercial product

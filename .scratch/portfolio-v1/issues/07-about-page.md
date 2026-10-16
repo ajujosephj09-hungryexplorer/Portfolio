@@ -16,7 +16,7 @@ No headshot on this page (headshot lives on the landing page only, per about sur
 
 **Blocked by:** None — 01 (scaffold) is complete.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] Career narrative renders as 3-4 thematic paragraphs organized around the positioning line (not chronological)
 - [ ] Experience timeline renders as ruled vertical list with 8 entries

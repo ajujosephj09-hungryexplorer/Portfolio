@@ -8,7 +8,7 @@ Forwarding this case study URL to Slack or LinkedIn shows a controlled preview c
 
 **Blocked by:** None — 01 (scaffold) is complete.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] Case study template renders: IdentityBar, title block with company framing and pull-quote metrics, six narrative sections separated by horizontal rules, RelatedCaseStudies, CTAContact
 - [ ] IdentityBar provides standalone "who is Aju" context (page works without homepage, ADR 0005)

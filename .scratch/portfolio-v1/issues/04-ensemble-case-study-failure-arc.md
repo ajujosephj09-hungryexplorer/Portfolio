@@ -10,7 +10,7 @@ CanadaHelps named and framed with commercial scale in every mention (ADR 0008). 
 
 **Blocked by:** 03 — Case study template + CanadaHelps Turnaround.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] Ensemble page renders using the case study template from ticket 03
 - [ ] Three-beat failure arc present with specific numbers at each beat: conversion crash (25% to 10%), revenue gap (40% below $100K target), LTV:CAC crash (4:1 to 1.3:1)

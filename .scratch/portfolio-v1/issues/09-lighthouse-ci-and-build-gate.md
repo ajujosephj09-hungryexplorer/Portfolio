@@ -20,7 +20,7 @@ This ticket confirms the credibility validator meets its performance, accessibil
 
 **Blocked by:** 04 — Ensemble case study, 05 — HPCC case study, 06 — Redline case study, 07 — About page, 08 — Contact page.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] `next build` succeeds with zero errors
 - [ ] All 8 routes exist as HTML files in the static export

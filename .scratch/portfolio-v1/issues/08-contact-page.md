@@ -10,7 +10,7 @@ Page-specific meta title, description, OG tags, canonical URL. Heading hierarchy
 
 **Blocked by:** None — 01 (scaffold) is complete.
 
-**Status:** ready-for-agent
+**Status:** done
 
 - [ ] Invitation line renders (one sentence, concise)
 - [ ] Email renders as mailto link to ajujosephj09@gmail.com
