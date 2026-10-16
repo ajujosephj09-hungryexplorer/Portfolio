@@ -302,7 +302,7 @@ export default function HomePage() {
           <p className="mt-6 text-base text-secondary leading-relaxed max-w-prose">
             From Cognizant in Tokyo to Databricks in Toronto. Product management,
             general management, and commercial leadership across B2B SaaS, fintech,
-            payments, and data platforms. Duke MBA. Five production AI systems shipped.
+            payments, and data platforms. Duke MBA. Three products built from zero. Three live AI systems.
           </p>
         </section>
 

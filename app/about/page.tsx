@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About Aju Joseph John',
   description:
-    'Product and commercial leader with 20 years building products from zero and running the P&L to scale them across B2B SaaS, fintech, payments, and data platforms. Four countries. $27M+ P&L. Five production AI systems shipped.',
+    'Product and commercial leader with 20 years building products from zero and running the P&L to scale them across B2B SaaS, fintech, payments, and data platforms. Four countries. ~$150M P&L. Three live AI systems.',
   openGraph: {
     title: 'About Aju Joseph John',
     description:
@@ -160,7 +160,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              AI is an operating lever, not a slide deck topic. I designed and deployed a human in the loop AI sales agent that raised lead conversion from 5% to 45%, a 45 percentage point lift. I built an AI PM system that cut development cycles from many weeks to under two weeks. Outside the enterprise, I shipped five production AI systems: competitive intelligence, contract risk analysis, financial reconciliation, career intelligence, and the sales agent itself. Every system uses structured output validation and human oversight. No hallucinated outputs reach the user.
+              AI is an operating lever, not a slide deck topic. I designed and deployed a human in the loop AI sales agent that raised lead conversion from 5% to 45%, a 45 percentage point lift. I built an AI PM system that cut development cycles from many weeks to under two weeks. Outside the enterprise, I have three live AI systems in production: competitive intelligence, contract risk analysis, and the sales agent itself. Every system uses structured output validation and human oversight. No hallucinated outputs reach the user.
             </p>
 
             <p>
@@ -263,7 +263,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              <strong>AI applied to real commercial problems.</strong> Not AI for its own sake. AI that changes how a business acquires, qualifies, and serves customers. I built a human in the loop AI sales agent that lifted lead conversion by 45 points. I shipped five production AI systems. This is the intersection where product leadership and applied AI compound.
+              <strong>AI applied to real commercial problems.</strong> Not AI for its own sake. AI that changes how a business acquires, qualifies, and serves customers. I built a human in the loop AI sales agent that lifted lead conversion by 45 points. I have three live AI systems in production. This is the intersection where product leadership and applied AI compound.
             </p>
           </div>
         </section>
