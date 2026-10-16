@@ -36,11 +36,11 @@
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Hero name. One instance per page. Libre Baskerville normal weight." },
+      "display": { "displayName": "Display", "purpose": "Hero name and page titles. One instance per page. Libre Baskerville normal weight." },
       "headline": { "displayName": "Headline", "purpose": "Section headings. Libre Baskerville bold." },
       "title": { "displayName": "Title", "purpose": "Case study titles within sections. Libre Baskerville bold." },
       "body": { "displayName": "Body", "purpose": "Running text. Source Sans 3 regular. Max line length capped at 65ch." },
-      "label": { "displayName": "Label", "purpose": "Metric labels, nav links, CTA text. Source Sans 3 semibold." },
+      "label": { "displayName": "Label", "purpose": "Metric labels, nav links, breadcrumb text, CTA text. Source Sans 3 semibold." },
       "metric": { "displayName": "Metric", "purpose": "Pull-quote sized outcome numbers. Libre Baskerville bold with tabular figures." }
     },
     "shadows": [],
@@ -61,7 +61,7 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "Filled CTA button with inline SVG icon. Used for email contact actions.",
-      "html": "<button class=\"ds-btn-primary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg> Email</button>",
+      "html": "<a class=\"ds-btn-primary\" href=\"mailto:ajujosephj09@gmail.com\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"0\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg> Email</a>",
       "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #1D4ED8; color: #FFFFFF; padding: 14px 24px; font-size: 0.875rem; font-weight: 600; font-family: 'Source Sans 3', system-ui, sans-serif; text-decoration: none; border: none; border-radius: 0; cursor: pointer; transition: background-color 150ms; } .ds-btn-primary:hover { background: #1E40AF; } .ds-btn-primary:focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; }"
     },
     {
@@ -69,16 +69,24 @@
       "kind": "button",
       "refersTo": "button-secondary",
       "description": "Outlined CTA button with inline SVG icon. Used for LinkedIn and secondary actions.",
-      "html": "<button class=\"ds-btn-secondary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg> LinkedIn</button>",
+      "html": "<a class=\"ds-btn-secondary\" href=\"https://www.linkedin.com/in/aju-joseph-john/\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg> LinkedIn</a>",
       "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: transparent; color: #111827; padding: 14px 24px; font-size: 0.875rem; font-weight: 600; font-family: 'Source Sans 3', system-ui, sans-serif; text-decoration: none; border: 1px solid #111827; border-radius: 0; cursor: pointer; transition: color 150ms, background-color 150ms; } .ds-btn-secondary:hover { background: #111827; color: #FAFAFA; } .ds-btn-secondary:focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; }"
     },
     {
       "name": "Navigation",
       "kind": "nav",
       "refersTo": null,
-      "description": "Top navigation bar with serif wordmark, text links, and social icon group separated by a rule border.",
-      "html": "<nav class=\"ds-nav\"><div class=\"ds-nav-inner\"><a class=\"ds-nav-wordmark\" href=\"/\">Aju Joseph John</a><div class=\"ds-nav-links\"><a class=\"ds-nav-link\" href=\"/#case-studies\">Case Studies</a><a class=\"ds-nav-link\" href=\"/about\">About</a><a class=\"ds-nav-link\" href=\"/contact\">Contact</a><div class=\"ds-nav-social\"><a class=\"ds-nav-icon\" href=\"#\" aria-label=\"LinkedIn\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg></a></div></div></div></nav>",
-      "css": ".ds-nav { width: 100%; border-bottom: 1px solid #D1D5DB; } .ds-nav-inner { max-width: 72rem; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; } .ds-nav-wordmark { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.125rem; font-weight: 700; color: #111827; text-decoration: none; transition: color 150ms; } .ds-nav-wordmark:hover { color: #1D4ED8; } .ds-nav-links { display: flex; align-items: center; gap: 32px; } .ds-nav-link { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; text-decoration: none; transition: color 150ms; } .ds-nav-link:hover { color: #111827; } .ds-nav-social { display: flex; align-items: center; gap: 16px; margin-left: 16px; padding-left: 16px; border-left: 1px solid #D1D5DB; } .ds-nav-icon { color: #4B5563; transition: color 150ms; } .ds-nav-icon:hover { color: #111827; }"
+      "description": "Top navigation bar with serif wordmark, text links with active state, and social icon group separated by a rule border.",
+      "html": "<nav class=\"ds-nav\"><div class=\"ds-nav-inner\"><a class=\"ds-nav-wordmark\" href=\"/\">Aju Joseph John</a><div class=\"ds-nav-links\"><a class=\"ds-nav-link\" href=\"/#case-studies\">Case Studies</a><a class=\"ds-nav-link ds-nav-link--active\" href=\"/about\">About</a><a class=\"ds-nav-link\" href=\"/contact\">Contact</a><div class=\"ds-nav-social\"><a class=\"ds-nav-icon\" href=\"#\" aria-label=\"LinkedIn\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg></a></div></div></div></nav>",
+      "css": ".ds-nav { width: 100%; border-bottom: 1px solid #D1D5DB; } .ds-nav-inner { max-width: 72rem; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; } .ds-nav-wordmark { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.125rem; font-weight: 700; color: #111827; text-decoration: none; transition: color 150ms; } .ds-nav-wordmark:hover { color: #1D4ED8; } .ds-nav-links { display: flex; align-items: center; gap: 32px; } .ds-nav-link { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; text-decoration: none; transition: color 150ms; } .ds-nav-link:hover { color: #111827; } .ds-nav-link--active { color: #111827; font-weight: 600; } .ds-nav-social { display: flex; align-items: center; gap: 16px; margin-left: 16px; padding-left: 16px; border-left: 1px solid #D1D5DB; } .ds-nav-icon { color: #4B5563; transition: color 150ms; } .ds-nav-icon:hover { color: #111827; }"
+    },
+    {
+      "name": "Breadcrumb",
+      "kind": "custom",
+      "refersTo": "breadcrumb",
+      "description": "Case study page breadcrumb. Text link to case studies section, slash separator in rule gray, current page title.",
+      "html": "<p class=\"ds-breadcrumb\"><a class=\"ds-breadcrumb-link\" href=\"/#case-studies\">Case Studies</a><span class=\"ds-breadcrumb-sep\">/</span><span>CanadaHelps Turnaround</span></p>",
+      "css": ".ds-breadcrumb { padding-top: 32px; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; margin: 0; } .ds-breadcrumb-link { color: #4B5563; text-decoration: none; transition: color 150ms; } .ds-breadcrumb-link:hover { color: #111827; } .ds-breadcrumb-sep { margin: 0 8px; color: #D1D5DB; }"
     },
     {
       "name": "Metric Tile",
@@ -94,7 +102,7 @@
       "refersTo": null,
       "description": "Two-column case study entry with title, company, teaser, action links, and right-aligned metric.",
       "html": "<div class=\"ds-case-study\"><div class=\"ds-case-study-content\"><h3 class=\"ds-case-study-title\"><a href=\"#\">Ensemble</a></h3><p class=\"ds-case-study-company\">CanadaHelps: $260M+ payments platform.</p><p class=\"ds-case-study-teaser\">Took a product from idea to 200+ customers and $432K ARR in under 18 months.</p><div class=\"ds-case-study-actions\"><a class=\"ds-case-study-link\" href=\"#\">Read the case study</a></div></div><div class=\"ds-case-study-metric\"><p class=\"ds-metric-value\">$432K</p><p class=\"ds-metric-label\">ARR from Zero</p></div></div>",
-      "css": ".ds-case-study { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: start; padding: 48px 0; } .ds-case-study-content { } .ds-case-study-title { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.25rem, 2vw, 1.5rem); font-weight: 700; color: #111827; margin: 0; } .ds-case-study-title a { color: #111827; text-decoration: none; transition: color 150ms; } .ds-case-study-title a:hover { color: #1D4ED8; } .ds-case-study-company { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; line-height: 1.625; margin: 8px 0 0 0; } .ds-case-study-teaser { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1rem; color: #111827; line-height: 1.625; max-width: 65ch; margin: 16px 0 0 0; } .ds-case-study-actions { margin: 16px 0 0 0; display: flex; align-items: center; gap: 16px; } .ds-case-study-link { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #1D4ED8; font-weight: 600; text-decoration: none; } .ds-case-study-link:hover { text-decoration: underline; } .ds-case-study-metric { text-align: right; } .ds-case-study-metric .ds-metric-value { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.875rem, 4vw, 2.25rem); font-weight: 700; color: #111827; font-variant-numeric: tabular-nums; margin: 0; } .ds-case-study-metric .ds-metric-label { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; margin: 4px 0 0 0; }"
+      "css": ".ds-case-study { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: start; padding: 40px 0 48px 0; } .ds-case-study-content { } .ds-case-study-title { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.25rem, 2vw, 1.5rem); font-weight: 700; color: #111827; margin: 0; } .ds-case-study-title a { color: #111827; text-decoration: none; transition: color 150ms; } .ds-case-study-title a:hover { color: #1D4ED8; } .ds-case-study-company { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; line-height: 1.625; margin: 8px 0 0 0; } .ds-case-study-teaser { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1rem; color: #111827; line-height: 1.625; max-width: 65ch; margin: 16px 0 0 0; } .ds-case-study-actions { margin: 16px 0 0 0; display: flex; align-items: center; gap: 16px; } .ds-case-study-link { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #1D4ED8; font-weight: 600; text-decoration: none; } .ds-case-study-link:hover { text-decoration: underline; } .ds-case-study-metric { text-align: right; } .ds-case-study-metric .ds-metric-value { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.875rem, 4vw, 2.25rem); font-weight: 700; color: #111827; font-variant-numeric: tabular-nums; margin: 0; } .ds-case-study-metric .ds-metric-label { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; margin: 4px 0 0 0; }"
     },
     {
       "name": "Horizontal Rule",
@@ -107,10 +115,26 @@
     {
       "name": "Footer",
       "kind": "nav",
-      "refersTo": null,
-      "description": "Minimal footer with serif name link and social icon row.",
-      "html": "<footer class=\"ds-footer\"><div class=\"ds-footer-inner\"><a class=\"ds-footer-name\" href=\"/\">Aju Joseph John</a><div class=\"ds-footer-icons\"><a class=\"ds-footer-icon\" href=\"#\" aria-label=\"LinkedIn\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg></a></div></div></footer>",
+      "refersTo": "footer",
+      "description": "Minimal footer with serif name link and four social/contact icons (LinkedIn, GitHub, Substack, Email).",
+      "html": "<footer class=\"ds-footer\"><div class=\"ds-footer-inner\"><a class=\"ds-footer-name\" href=\"/\">Aju Joseph John</a><div class=\"ds-footer-icons\"><a class=\"ds-footer-icon\" href=\"#\" aria-label=\"LinkedIn\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\"/><rect x=\"2\" y=\"9\" width=\"4\" height=\"12\"/><circle cx=\"4\" cy=\"4\" r=\"2\"/></svg></a><a class=\"ds-footer-icon\" href=\"#\" aria-label=\"GitHub\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22\"/></svg></a><a class=\"ds-footer-icon\" href=\"#\" aria-label=\"Substack\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M4 4h16\"/><path d=\"M4 8h16\"/><path d=\"M4 12l8 6 8-6\"/></svg></a><a class=\"ds-footer-icon\" href=\"mailto:ajujosephj09@gmail.com\" aria-label=\"Email\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"0\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg></a></div></div></footer>",
       "css": ".ds-footer { width: 100%; border-top: 1px solid #D1D5DB; margin-top: 96px; } .ds-footer-inner { max-width: 72rem; margin: 0 auto; padding: 32px 24px; display: flex; align-items: center; justify-content: space-between; } .ds-footer-name { font-family: 'Libre Baskerville', Georgia, serif; font-size: 0.875rem; color: #4B5563; text-decoration: none; transition: color 150ms; } .ds-footer-name:hover { color: #111827; } .ds-footer-icons { display: flex; align-items: center; gap: 20px; } .ds-footer-icon { color: #4B5563; transition: color 150ms; } .ds-footer-icon:hover { color: #111827; }"
+    },
+    {
+      "name": "Secondary Link",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Inline icon-and-text link used for secondary destinations (Substack, GitHub on contact page).",
+      "html": "<a class=\"ds-secondary-link\" href=\"#\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h16\"/><path d=\"M4 8h16\"/><path d=\"M4 12l8 6 8-6\"/></svg> Substack</a>",
+      "css": ".ds-secondary-link { display: inline-flex; align-items: center; gap: 8px; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 0.875rem; color: #4B5563; text-decoration: none; transition: color 150ms; } .ds-secondary-link:hover { color: #111827; }"
+    },
+    {
+      "name": "404 Page",
+      "kind": "page",
+      "refersTo": null,
+      "description": "Custom not-found page with display heading, body explanation, and single primary button back to home.",
+      "html": "<article class=\"ds-404\"><section class=\"ds-404-inner\"><h1 class=\"ds-404-heading\">Page Not Found</h1><p class=\"ds-404-body\">The page you are looking for does not exist or has been moved.</p><div class=\"ds-404-action\"><a class=\"ds-btn-primary\" href=\"/\">Back to Home</a></div></section></article>",
+      "css": ".ds-404 { max-width: 72rem; margin: 0 auto; padding: 0 24px; } .ds-404-inner { padding: 64px 0 48px 0; } .ds-404-heading { font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(2.25rem, 5vw, 3rem); font-weight: 400; color: #111827; line-height: 1.1; margin: 0; } .ds-404-body { font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 1rem; color: #4B5563; line-height: 1.625; max-width: 65ch; margin: 16px 0 0 0; } .ds-404-action { margin: 32px 0 0 0; } @media (min-width: 768px) { .ds-404-inner { padding: 96px 0 64px 0; } .ds-404-heading { font-size: clamp(2.25rem, 5vw, 3.75rem); } }"
     }
   ],
   "narrative": {
@@ -133,8 +157,9 @@
       "Do use horizontal rules (<hr>) as the primary section divider. Every content transition gets one.",
       "Do set outcome numbers in the serif metric style with tabular figures enabled.",
       "Do keep body text within max-w-prose or max-w-2xl to maintain readable line lengths.",
-      "Do use inline SVGs for all icons. Size them consistently: 16px in buttons and footer, 18px in nav.",
-      "Do respect prefers-reduced-motion by disabling entrance animations."
+      "Do use inline SVGs for all icons. Size them consistently: 16px in buttons, footer, and secondary links; 18px in nav.",
+      "Do respect prefers-reduced-motion by disabling entrance animations.",
+      "Do use rx=\"0\" on all SVG <rect> elements to enforce the Sharp Corner Rule in icon artwork."
     ],
     "donts": [
       "Don't add a second chromatic color. The palette is monochrome plus one blue.",

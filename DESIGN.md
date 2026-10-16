@@ -91,9 +91,9 @@ A five-token palette: one white ground, one near-black ink, one blue accent, one
 
 ### Neutral
 - **Near-White Ground** (#FAFAFA): Page background, scrollbar track, button-secondary hover text color. Not pure white; the warmth is imperceptible but prevents clinical harshness on large screens.
-- **Near-Black Ink** (#111827): All primary text, heading text, secondary button border and text, nav wordmark. The darkest value in the system.
-- **Secondary Gray** (#4B5563): Supporting text (company names, metric labels, context lines), nav links at rest, footer text, scrollbar thumb hover. Provides hierarchy without adding a new hue.
-- **Rule Gray** (#D1D5DB): Horizontal rules, nav/footer borders, metric column dividers, headshot placeholder border, scrollbar thumb. The lightest functional gray.
+- **Near-Black Ink** (#111827): All primary text, heading text, secondary button border and text, nav wordmark, active nav link text. The darkest value in the system.
+- **Secondary Gray** (#4B5563): Supporting text (company names, metric labels, context lines), nav links at rest, footer text, breadcrumb text, scrollbar thumb hover. Provides hierarchy without adding a new hue.
+- **Rule Gray** (#D1D5DB): Horizontal rules, nav/footer borders, metric column dividers, headshot border, breadcrumb slash separator, scrollbar thumb. The lightest functional gray.
 
 ### Named Rules
 **The One Accent Rule.** The only chromatic color in the system is #1D4ED8. If a new surface needs a second color, the system does not support it; reconsider the surface.
@@ -106,12 +106,12 @@ A five-token palette: one white ground, one near-black ink, one blue accent, one
 **Character:** Institutional serif for authority and permanence; systematic sans for readability and density. The pairing reads as a financial document or annual report, not a design portfolio. Both are Google Fonts loaded via `next/font` with `display: swap`.
 
 ### Hierarchy
-- **Display** (400, text-4xl/text-5xl/text-6xl responsive, leading-tight): The hero name. Only one instance per page. Libre Baskerville at normal weight; the font's natural presence carries without bold.
-- **Headline** (700, text-2xl/text-3xl responsive, leading-tight): Section headings (Case Studies, Career Scope, Get in Touch). Libre Baskerville bold.
+- **Display** (400, text-4xl/text-5xl/text-6xl responsive, leading-tight): The hero name and page titles (About, Contact, 404). Only one instance per page. Libre Baskerville at normal weight; the font's natural presence carries without bold.
+- **Headline** (700, text-2xl/text-3xl responsive, leading-tight): Section headings (Case Studies, Career Scope, Get in Touch, Experience, Education, What Drives Me). Libre Baskerville bold.
 - **Title** (700, text-xl/text-2xl responsive, leading-tight): Case study titles within sections. Libre Baskerville bold.
 - **Metric** (700, text-3xl/text-4xl responsive, leading-tight, tabular-nums): Pull-quote sized numbers. Libre Baskerville bold with `font-variant-numeric: tabular-nums` for columnar alignment.
 - **Body** (400, text-base, leading-relaxed, max-w-prose): Running text. Source Sans 3 regular. Line length capped at `max-w-prose` (65ch) or `max-w-2xl` (42rem).
-- **Label** (600, text-sm, leading-normal): Metric labels, company context, nav links, CTA button text. Source Sans 3 semibold.
+- **Label** (600, text-sm, leading-normal): Metric labels, company context, nav links, CTA button text, breadcrumb text. Source Sans 3 semibold.
 
 ### Named Rules
 **The Metric Typography Rule.** Numbers that represent outcomes (revenue, retention, ARR) are always set in the serif face at pull-quote scale with tabular figures enabled. They are never set in the sans body face.
@@ -120,13 +120,13 @@ A five-token palette: one white ground, one near-black ink, one blue accent, one
 
 Container: `max-w-content` (72rem / 1152px) centered with `mx-auto`. Horizontal padding: `px-6` (1.5rem) at all breakpoints.
 
-Breakpoints follow Tailwind defaults: `md` at 768px, `lg` at 1024px, `sm` at 640px.
+Breakpoints follow Tailwind defaults: `sm` at 640px, `md` at 768px, `lg` at 1024px.
 
 Section rhythm: `py-12 md:py-16` (3rem / 4rem) for major content sections. Hero uses `pt-16 pb-12 md:pt-24 md:pb-16`. Metric strip uses `py-10 md:py-14`.
 
-Grid: Case studies use `md:grid-cols-[1fr_auto]` with the metric column right-aligned on desktop. Metric strips use `grid-cols-2 md:grid-cols-4`. Career scope mirrors the metric grid pattern.
+Grid: Case studies use `md:grid-cols-[1fr_auto]` with the metric column right-aligned on desktop. Metric strips use `grid-cols-2 md:grid-cols-4`. Career scope mirrors the metric grid pattern. Experience timeline uses `md:flex-row md:items-baseline` with a fixed-width date column (`md:w-48`).
 
-Mobile behavior: metric grids collapse to 2x2 with left-border dividers on odd columns. Case study metric columns hide on mobile; inline metrics appear instead. Nav collapses to a hamburger menu with a slide-down panel.
+Mobile behavior: metric grids collapse to 2x2 with left-border dividers on odd columns. Case study metric columns hide on mobile; inline metrics appear instead. Nav collapses to a hamburger menu with a slide-down panel. Footer stacks vertically below `sm`.
 
 Footer sits at page bottom via `min-h-screen flex flex-col` on `body` with `flex-1` on `main`. Footer top margin: `mt-24`.
 
@@ -139,7 +139,7 @@ The system is completely flat. No box-shadows exist anywhere: not on cards, butt
 
 ## Shapes
 
-All interactive elements (buttons, nav, inputs) use zero border-radius. The system's form language is rectilinear throughout. Buttons are sharp-cornered rectangles. The headshot placeholder is a sharp-cornered square. Horizontal rules are straight 1px lines.
+All interactive elements (buttons, nav, inputs) use zero border-radius. The system's form language is rectilinear throughout. Buttons are sharp-cornered rectangles. The headshot is a sharp-cornered square with a 1px rule-gray border. Horizontal rules are straight 1px lines. All SVG icon containers (email `<rect>`) use `rx="0"`.
 
 The only border-radius in the build is `4px` on the scrollbar thumb, which is browser chrome and not part of the design vocabulary.
 
@@ -158,9 +158,16 @@ The only border-radius in the build is `4px` on the scrollbar thumb, which is br
 ### Navigation
 - **Style:** Full-width bar, bottom border in rule gray. Name as serif bold wordmark (text-lg) left-aligned. Text links right-aligned in secondary gray, text-sm.
 - **Desktop:** Horizontal link row with social icons separated by a left border in rule gray. Social icons are 18px inline SVGs in secondary gray.
+- **Active State:** Active page link receives `text-ink font-semibold`, replacing the default secondary gray. Determined by `usePathname`: exact match for `/about` and `/contact`, startsWith match for `/case-studies` against the "Case Studies" link.
 - **Hover:** Text links shift to ink. Wordmark shifts to accent.
 - **Mobile:** Hamburger icon (20px) toggles a dropdown panel with vertical link stack and social icon row, separated by rule borders. Links gain `py-2` vertical padding for touch targets.
 - **Focus:** 2px solid accent outline with 2px offset (global `focus-visible` rule).
+
+### Breadcrumb
+- **Location:** Case study pages only, above the identity bar.
+- **Style:** `pt-8 text-sm text-secondary`. Plain text, no underline at rest.
+- **Structure:** "Case Studies" as a link (`text-secondary hover:text-ink transition-colors`) followed by a slash separator in rule gray (`mx-2 text-rule`) followed by the current page title as a plain `<span>`.
+- **Semantic:** Visual breadcrumb in the markup; structured BreadcrumbList provided via JSON-LD in a separate `<script>` block.
 
 ### Metric Tiles
 - **Style:** Vertically stacked: large serif number over small sans label. On desktop, separated by left borders in rule gray with `pl-8` padding (except first).
@@ -175,9 +182,24 @@ The only border-radius in the build is `4px` on the scrollbar thumb, which is br
 - **Action links:** "Read the case study" in accent blue, text-sm font-semibold. "View live product" in secondary gray.
 - **Separated by:** Horizontal rules between entries.
 
+### Case Study Page (CaseStudyLayout)
+- **Structure:** Breadcrumb, identity bar, horizontal rule, title block with headline metrics, narrative sections separated by rules, related studies grid, contact CTA.
+- **Identity Bar:** `mt-4 text-sm text-secondary leading-relaxed`. One-line company/role context.
+- **Narrative Sections:** Each section has a headline (serif bold, text-2xl/text-3xl) and body content (`text-base text-ink leading-relaxed max-w-prose`), separated by horizontal rules.
+- **Related Studies:** Grid rows with serif bold title (linked, ink to accent on hover) and right-aligned metric. Separated by horizontal rules.
+
+### 404 Page
+- **Style:** Minimal. Display typography for "Page Not Found" (font-serif text-4xl md:text-5xl font-normal). Body text in secondary. Single primary button "Back to Home" without icon.
+- **Layout:** Same container and hero spacing as other pages (`pt-16 pb-12 md:pt-24 md:pb-16`).
+
 ### Footer
 - **Style:** Top border in rule gray. `mt-24` top margin. `py-8` vertical padding.
-- **Layout:** Serif name link (text-sm, secondary) left, social icon row (16px SVGs, secondary) right. Stacks vertically on mobile.
+- **Layout:** Serif name link (text-sm, secondary) left, social icon row (16px SVGs, secondary) right. Stacks vertically below `sm`. Four icons: LinkedIn, GitHub, Substack, Email.
+
+### Secondary Link Row
+- **Location:** Contact page, below the primary CTA buttons.
+- **Style:** Inline-flex with 16px SVG icon and text-sm label, secondary gray, no border or background. `hover:text-ink transition-colors`.
+- **Use:** Substack and GitHub links on the contact page.
 
 ## Do's and Don'ts
 
@@ -185,8 +207,9 @@ The only border-radius in the build is `4px` on the scrollbar thumb, which is br
 - **Do** use horizontal rules (`<hr>`) as the primary section divider. Every content transition gets one.
 - **Do** set outcome numbers in the serif metric style with tabular figures enabled.
 - **Do** keep body text within `max-w-prose` or `max-w-2xl` to maintain readable line lengths.
-- **Do** use inline SVGs for all icons. Size them consistently: 16px in buttons and footer, 18px in nav.
+- **Do** use inline SVGs for all icons. Size them consistently: 16px in buttons, footer, and secondary links; 18px in nav.
 - **Do** respect `prefers-reduced-motion` by disabling entrance animations.
+- **Do** use `rx="0"` on all SVG `<rect>` elements to enforce the Sharp Corner Rule in icon artwork.
 
 ### Don't:
 - **Don't** add a second chromatic color. The palette is monochrome plus one blue.
