@@ -149,7 +149,7 @@ export default function AboutPage() {
             About
           </h1>
 
-          <div className="mt-8 space-y-5 text-base text-ink leading-relaxed max-w-prose">
+          <div className="mt-8 space-y-5 text-base text-ink leading-relaxed max-w-3xl">
             <p>
               I have spent 20 years building products from zero and running the P&L to scale them. Not one product launch repeated across templates, but four distinct commercialization stories across three companies: a SaaS product incubated from stealth to 200+ customers and $432K ARR at CanadaHelps, a proprietary big data platform turned into a $50M+ market facing business at LexisNexis, a claims triage product grown to $20M in revenue, and payment APIs brought from concept to 500+ bank adoption at Fiserv. The pattern is the same each time: find the underserved segment, build the business case, ship, then own the revenue line.
             </p>
@@ -196,7 +196,7 @@ export default function AboutPage() {
                         {entry.proofPoints.map((point, j) => (
                           <li
                             key={j}
-                            className="text-base text-ink leading-relaxed max-w-prose"
+                            className="text-base text-ink leading-relaxed max-w-3xl"
                           >
                             {point}
                           </li>
@@ -252,7 +252,7 @@ export default function AboutPage() {
             What Drives Me
           </h2>
 
-          <div className="mt-8 space-y-5 text-base text-ink leading-relaxed max-w-prose">
+          <div className="mt-8 space-y-5 text-base text-ink leading-relaxed max-w-3xl">
             <p>
               <strong>Building businesses from zero.</strong> I have done this four times across three companies. CanadaHelps Ensemble: stealth to 200+ customers and $36K MRR in 12 months. LexisNexis HPCC: internal platform to $50M+ external business. The 0 to 1 to N arc, discovery, launch, scale, is my core operating mode.
             </p>
@@ -274,7 +274,7 @@ export default function AboutPage() {
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-ink">
             Get in Touch
           </h2>
-          <p className="mt-4 text-base text-secondary leading-relaxed max-w-prose">
+          <p className="mt-4 text-base text-secondary leading-relaxed max-w-3xl">
             Open to conversations about product leadership, commercial strategy,
             and AI driven product development.
           </p>
