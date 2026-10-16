@@ -275,11 +275,11 @@ export default function HomePage() {
               </h2>
 
               {/* Headshot on mobile: above career stats */}
-              <div className="mt-6 md:hidden w-32 h-32 bg-gray-200 border border-rule" aria-label="Headshot placeholder">
-                <div className="w-full h-full flex items-center justify-center text-sm text-secondary">
-                  Headshot
-                </div>
-              </div>
+              <img
+                src="/hd-1791323747777-99d17db7-ba6b-4b64-9584-a139bd203213.png"
+                alt="Aju Joseph John"
+                className="mt-6 md:hidden w-32 h-32 object-cover border border-rule"
+              />
 
               <div className="mt-6 md:mt-8 grid grid-cols-2 sm:grid-cols-4 gap-y-6">
                 {careerScope.map((s, i) => (
@@ -306,11 +306,11 @@ export default function HomePage() {
             </div>
 
             {/* Headshot on desktop: right column */}
-            <div className="hidden md:block w-48 h-48 bg-gray-200 border border-rule flex-shrink-0" aria-label="Headshot placeholder">
-              <div className="w-full h-full flex items-center justify-center text-sm text-secondary">
-                Headshot
-              </div>
-            </div>
+            <img
+              src="/hd-1791323747777-99d17db7-ba6b-4b64-9584-a139bd203213.png"
+              alt="Aju Joseph John"
+              className="hidden md:block w-48 h-48 object-cover border border-rule flex-shrink-0"
+            />
           </div>
         </section>
 
