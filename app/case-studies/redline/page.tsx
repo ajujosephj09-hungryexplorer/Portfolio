@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     title: 'Redline: AI Contract Review for Freelancers | Aju Joseph John',
     description:
       'Research driven AI contract review. Every risk flag cites the exact source sentence from the document. 68 tests, 13 routes, live deployed. Built at Mapleview Partners.',
-    url: 'https://ajujosephjohn.vercel.app/case-studies/redline',
+    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/redline',
   },
   alternates: {
-    canonical: 'https://ajujosephjohn.vercel.app/case-studies/redline',
+    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/redline',
   },
 }
 
@@ -268,7 +268,7 @@ export default function RedlinePage() {
         dateModified: '2026-10-15',
         description:
           'How Aju Joseph John built Redline, a research driven AI contract review system where every risk flag cites its source sentence. 71% of freelancers experience non payment. 68 tests, 13 routes, live deployed.',
-        url: 'https://ajujosephjohn.vercel.app/case-studies/redline',
+        url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/redline',
       }}
     />
   )

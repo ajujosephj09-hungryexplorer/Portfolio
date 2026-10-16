@@ -19,7 +19,7 @@ const sourceSans = Source_Sans_3({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ajujosephjohn.vercel.app'),
+  metadataBase: new URL('https://portfolio-git-main-aju-joseph-johns-projects.vercel.app'),
   title: {
     default: 'Aju Joseph John | Product & Commercial Leader',
     template: '%s | Aju Joseph John',
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     title: 'Aju Joseph John | Product & Commercial Leader',
     description:
       'Product and commercial leader with 20 years building products from zero and running the P&L to scale them. B2B SaaS, fintech, payments, data platforms.',
-    url: 'https://ajujosephjohn.vercel.app',
+    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
   },
   alternates: {
-    canonical: 'https://ajujosephjohn.vercel.app',
+    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
   },
   robots: {
     index: true,

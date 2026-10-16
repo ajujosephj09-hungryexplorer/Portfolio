@@ -10,7 +10,7 @@ import { readFileSync, existsSync } from 'fs'
 import { join, resolve } from 'path'
 
 const OUT_DIR = resolve(process.cwd(), 'out')
-const BASE_URL = 'https://ajujosephjohn.vercel.app'
+const BASE_URL = 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app'
 
 const ROUTES = [
   { path: '/', file: 'index.html' },

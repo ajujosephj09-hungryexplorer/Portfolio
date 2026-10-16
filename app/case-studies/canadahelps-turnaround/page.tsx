@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     title: 'CanadaHelps Turnaround: From Silos to 83% Retention | Aju Joseph John',
     description:
       'Inherited four disconnected teams at CanadaHelps. Built one coherent operating strategy, restructured into cross functional pods, deployed AI as an operating lever. Retention 67% to 83%. NPS 5 to 33.',
-    url: 'https://ajujosephjohn.vercel.app/case-studies/canadahelps-turnaround',
+    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
   },
   alternates: {
-    canonical: 'https://ajujosephjohn.vercel.app/case-studies/canadahelps-turnaround',
+    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
   },
 }
 
@@ -248,7 +248,7 @@ export default function CanadaHelpsTurnaroundPage() {
         dateModified: '2026-10-15',
         description:
           'How Aju Joseph John inherited four disconnected teams at CanadaHelps, built one coherent operating strategy, and deployed AI as an operating lever. Retention 67% to 83%, NPS 5 to 33.',
-        url: 'https://ajujosephjohn.vercel.app/case-studies/canadahelps-turnaround',
+        url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
       }}
     />
   )

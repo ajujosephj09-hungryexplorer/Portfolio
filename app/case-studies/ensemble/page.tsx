@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     title: 'Ensemble: 0 to 1 SaaS Incubation at CanadaHelps | Aju Joseph John',
     description:
       'Incubated a new SaaS product at CanadaHelps despite $0 willingness to pay in research. Grew to $432K ARR, 200+ customers, 86% PLG. Navigated a three beat failure arc in trial, sales, and unit economics.',
-    url: 'https://ajujosephjohn.vercel.app/case-studies/ensemble',
+    url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/ensemble',
   },
   alternates: {
-    canonical: 'https://ajujosephjohn.vercel.app/case-studies/ensemble',
+    canonical: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/ensemble',
   },
 }
 
@@ -334,7 +334,7 @@ export default function EnsemblePage() {
         dateModified: '2026-10-15',
         description:
           'How Aju Joseph John incubated a new SaaS product at CanadaHelps despite false negatives in validation, grew it to $432K ARR and 200+ customers, and navigated a three beat failure arc in trial strategy, sales recovery, and unit economics.',
-        url: 'https://ajujosephjohn.vercel.app/case-studies/ensemble',
+        url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/ensemble',
       }}
     />
   )
