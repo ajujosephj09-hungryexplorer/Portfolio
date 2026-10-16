@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import CaseStudyLayout from '../../../components/CaseStudyLayout'
 
 export const metadata: Metadata = {
-  title: 'CanadaHelps Turnaround: From Silos to 83% Retention',
+  title: 'B2B Payments Business Turnaround: From Silos to $266M Processing Revenue',
   description:
-    'How Aju Joseph John inherited four disconnected teams at CanadaHelps, built one coherent operating strategy, restructured into cross functional pods, and deployed AI as an operating lever. Retention rose from 67% to 83%, stickiness from 25% to 77%, NPS from 5 to 33.',
+    'How Aju Joseph John led a B2B payments business turnaround at CanadaHelps, restructured four disconnected teams into cross functional pods, and deployed AI as an operating lever. Processing revenue grew from $230M to $266M. NPS from 5 to 33.',
   openGraph: {
-    title: 'CanadaHelps Turnaround: From Silos to 83% Retention | Aju Joseph John',
+    title: 'B2B Payments Business Turnaround: From Silos to $266M Processing Revenue | Aju Joseph John',
     description:
-      'Inherited four disconnected teams at CanadaHelps. Built one coherent operating strategy, restructured into cross functional pods, deployed AI as an operating lever. Retention 67% to 83%. NPS 5 to 33.',
+      'Led a B2B payments business turnaround at CanadaHelps. Restructured four teams into cross functional pods, deployed AI as an operating lever. Processing revenue $230M to $266M. NPS 5 to 33.',
     url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
   },
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 }
 
 const headlineMetrics = [
-  { value: '67% → 83%', label: 'Retention' },
+  { value: '$230M → $266M', label: 'Processing Revenue' },
   { value: '25% → 77%', label: 'Stickiness' },
   { value: '5 → 33', label: 'NPS' },
   { value: '10K → 16K', label: 'MAU' },
@@ -25,9 +25,9 @@ const headlineMetrics = [
 
 const relatedStudies = [
   {
-    title: 'Ensemble: 0 to 1 SaaS Incubation',
-    metric: '$432K ARR',
-    href: '/case-studies/ensemble',
+    title: 'Building a $150M Banking Intelligence Portfolio',
+    metric: '~$150M Portfolio',
+    href: '/case-studies/fiserv-portfolio',
   },
   {
     title: 'HPCC Platform Commercialization',
@@ -175,6 +175,44 @@ const sections = [
     ),
   },
   {
+    heading: 'Course Corrections',
+    content: (
+      <>
+        <p>
+          The DMS sunset freed headcount, budget, and bandwidth. That space became
+          CanadaHelps Ensemble, a lightweight CRM for nonprofits who could not afford
+          Salesforce or Blackbaud. A small team built the MVP in under a month. Every
+          validation signal came back negative: $0 willingness to pay in a webinar survey,
+          six beta invitees who were all no shows. I read it as a false negative on stated
+          preference and assigned 25% of the sales team to sell it. Ten deals closed in the
+          first month. Real demand, confirmed by revenue.
+        </p>
+        <p className="mt-4">
+          Ensemble grew to 200+ customers and $432K ARR. But two significant missteps
+          happened along the way. First, I extended the free trial from two weeks to four
+          weeks, believing more time would push PLG conversion from 25% to 35%. Sales
+          pushed back; they argued buying is impulsive. I overruled them. PLG conversion
+          dropped from 25% to 10%. Revenue fell 40% below target. Customers were achieving
+          their goals during the trial, which removed all urgency to buy. The deceptive
+          part: headline pipeline metrics still looked healthy. The conversion engine was
+          broken underneath numbers that said everything was fine.
+        </p>
+        <p className="mt-4">
+          I reversed the trial in one quarter. Flipped it back to two weeks, cleaned 20%+
+          of stale pipeline to closed lost, replenished with better qualified leads, and
+          used targeted discounts to recover deals already on the extended trial. The
+          quarter hit 140% of target. Win rate recovered from 7.75% to 20%. But the
+          discounts eroded ARPU roughly 7%, crashing LTV:CAC from 4:1 to 1.3:1. The fix
+          required four coordinated moves: add a Reporting feature to justify a price floor
+          of $75 per month, raise renewal prices 10%, run engagement and retention plays,
+          and invest in PLG volume to bring down CAC. LTV:CAC restored toward 3:1. The
+          pattern: each point fix created the next problem until I stopped treating
+          connected metrics as independent variables and redesigned the system.
+        </p>
+      </>
+    ),
+  },
+  {
     heading: 'Outcome',
     content: (
       <>
@@ -236,18 +274,18 @@ const sections = [
 export default function CanadaHelpsTurnaroundPage() {
   return (
     <CaseStudyLayout
-      title="CanadaHelps Turnaround"
+      title="B2B Payments Business Turnaround"
       companyLine="CanadaHelps: Canada's largest online giving and payments platform. $260M+ processing volume. $27M+ P&L."
       metrics={headlineMetrics}
       sections={sections}
       relatedStudies={relatedStudies}
       seo={{
-        title: 'CanadaHelps Turnaround: From Silos to 83% Retention',
+        title: 'B2B Payments Business Turnaround: From Silos to $266M Processing Revenue',
         companyName: 'CanadaHelps',
         datePublished: '2026-10-15',
         dateModified: '2026-10-15',
         description:
-          'How Aju Joseph John inherited four disconnected teams at CanadaHelps, built one coherent operating strategy, and deployed AI as an operating lever. Retention 67% to 83%, NPS 5 to 33.',
+          'How Aju Joseph John led a B2B payments business turnaround at CanadaHelps, restructured four teams into cross functional pods, and deployed AI as an operating lever. Processing revenue $230M to $266M. NPS 5 to 33.',
         url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/canadahelps-turnaround',
       }}
     />

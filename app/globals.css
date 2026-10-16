@@ -65,6 +65,11 @@ a {
   font-variant-numeric: tabular-nums;
 }
 
+/* Headshot contrast correction */
+.headshot {
+  filter: contrast(1.12) brightness(0.95) saturate(1.05);
+}
+
 /* Authored motion: hero thesis entrance */
 @keyframes thesis-enter {
   from {

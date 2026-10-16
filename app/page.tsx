@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Aju Joseph John | Product & Commercial Leader',
   description:
-    'Product and commercial leader with 20 years building products from zero and running the P&L to scale them. $27M+ P&L, $50M+ platform commercialization, $432K ARR from zero.',
+    'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. $27M+ P&L, $150M portfolio, five production AI systems.',
   openGraph: {
     title: 'Aju Joseph John | Product & Commercial Leader',
     description:
-      'Product and commercial leader with 20 years building products from zero and running the P&L to scale them. $27M+ P&L, $50M+ platform commercialization, $432K ARR from zero.',
+      'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. $27M+ P&L, $150M portfolio, five production AI systems.',
     url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app',
   },
   alternates: {
@@ -18,24 +18,24 @@ export const metadata: Metadata = {
 
 const caseStudies = [
   {
-    title: 'CanadaHelps Turnaround',
+    title: 'B2B Payments Business Turnaround',
     company:
-      "CanadaHelps: Canada's largest online giving and payments platform. $260M+ annual processing volume.",
+      "Canada's largest online giving and payments platform. $260M+ annual processing volume. $27M+ P&L.",
     teaser:
-      'Inherited four disconnected teams with no aligned strategy. Built one coherent operating model, restructured into cross functional pods, and deployed AI as an operating lever. Customer retention rose from 67% to 83%. Stickiness from 25% to 77%. NPS from 5 to 33.',
-    metric: '67% → 83%',
-    metricLabel: 'Retention',
+      'Inherited four disconnected teams with no aligned strategy. Built one coherent operating model, restructured into cross functional pods, and deployed AI as an operating lever. Processing revenue grew from $230M to $266M. NPS from 5 to 33.',
+    metric: '$230M → $266M',
+    metricLabel: 'Processing Revenue',
     href: '/case-studies/canadahelps-turnaround',
   },
   {
-    title: 'Ensemble',
+    title: 'Building a $150M Banking Intelligence Portfolio',
     company:
-      'CanadaHelps: $260M+ payments platform. Ensemble was the 0 to 1 SaaS product incubated inside it.',
+      'Fiserv. Senior Director, Product Management. ~$150M banking intelligence portfolio serving ~4,000 banks.',
     teaser:
-      'Took a product from idea to 200+ customers and $432K ARR in under 18 months. 86% acquired through product led growth. Made the hard call to sunset a legacy CRM losing $115 per $100 earned and reallocated the headcount into growth.',
-    metric: '$432K',
-    metricLabel: 'ARR from Zero',
-    href: '/case-studies/ensemble',
+      'Inherited a declining portfolio after a major acquisition restructuring. Built Abiliti, a new SaaS analytics platform, from scratch to $24.9M ARR. Led the SBA PPP crisis response, disbursing ~$5B in under 3 weeks. Drove Apple Pay API monetization across 500+ banks.',
+    metric: '~$150M',
+    metricLabel: 'Portfolio',
+    href: '/case-studies/fiserv-portfolio',
   },
   {
     title: 'HPCC Platform Commercialization',
@@ -49,7 +49,7 @@ const caseStudies = [
   {
     title: 'Redline',
     company:
-      'Mapleview Partners. AI contract review product built from user research through production deployment.',
+      'Personal AI project. Contract review built from user research through production deployment.',
     teaser:
       'Research found 71% of freelancers experience non payment. Built a trust first AI system where every risk flag cites its source sentence. 68 tests, 13 routes, live and inspectable.',
     metric: 'Live',
@@ -60,8 +60,8 @@ const caseStudies = [
 ]
 
 const metrics = [
-  { value: '67% → 83%', label: 'Customer Retention', study: 'CanadaHelps Turnaround' },
-  { value: '$432K', label: 'ARR from Zero', study: 'Ensemble' },
+  { value: '$230M → $266M', label: 'Processing Revenue', study: 'B2B Payments Turnaround' },
+  { value: '~$150M', label: 'Banking Portfolio', study: 'Fiserv' },
   { value: '$50M+', label: 'Platform Revenue', study: 'HPCC at LexisNexis' },
   { value: 'Live', label: 'AI Product Shipped', study: 'Redline' },
 ]
@@ -134,13 +134,22 @@ export default function HomePage() {
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-ink leading-tight">
             Aju Joseph John
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-ink leading-relaxed max-w-2xl">
-            Builds products from zero and runs the P&L to scale them.
-          </p>
-          <p className="mt-3 text-base text-secondary leading-relaxed max-w-2xl">
-            20 years in product and commercial leadership. B2B SaaS, fintech,
-            payments, and data platforms. Four countries. $27M+ in P&L ownership.
-          </p>
+          <div className="mt-6 md:mt-0 md:flex md:items-start md:gap-10">
+            <div className="flex-1">
+              <p className="mt-4 md:mt-4 text-lg md:text-xl text-ink leading-relaxed max-w-2xl">
+                Product and P&L leader who builds from zero and deploys AI as an operating lever.
+              </p>
+              <p className="mt-3 text-base text-secondary leading-relaxed max-w-2xl">
+                20 years across B2B SaaS, fintech, payments, and data platforms.
+                Four countries. $27M+ in P&L ownership. Five production AI systems shipped.
+              </p>
+            </div>
+            <img
+              src="/hd-1791323747777-99d17db7-ba6b-4b64-9584-a139bd203213.png"
+              alt="Aju Joseph John"
+              className="mt-6 md:mt-4 w-32 h-32 md:w-40 md:h-40 object-cover border border-rule headshot flex-shrink-0"
+            />
+          </div>
         </section>
 
         <hr />
@@ -268,50 +277,32 @@ export default function HomePage() {
 
         {/* ─── Career Scope ─── */}
         <section className="py-12 md:py-16" aria-label="Career scope">
-          <div className="grid md:grid-cols-[1fr_auto] gap-10 items-center">
-            <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-ink">
-                Career Scope
-              </h2>
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-ink">
+            Career Scope
+          </h2>
 
-              {/* Headshot on mobile: above career stats */}
-              <img
-                src="/hd-1791323747777-99d17db7-ba6b-4b64-9584-a139bd203213.png"
-                alt="Aju Joseph John"
-                className="mt-6 md:hidden w-32 h-32 object-cover border border-rule"
-              />
-
-              <div className="mt-6 md:mt-8 grid grid-cols-2 sm:grid-cols-4 gap-y-6">
-                {careerScope.map((s, i) => (
-                  <div
-                    key={i}
-                    className={`${
-                      i > 0
-                        ? 'sm:border-l sm:border-rule sm:pl-6'
-                        : ''
-                    } ${i % 2 !== 0 ? 'pl-6 border-l border-rule sm:pl-6' : ''}`}
-                  >
-                    <p className="font-serif text-2xl md:text-3xl font-bold text-ink tabular-nums">
-                      {s.value}
-                    </p>
-                    <p className="mt-1 text-sm text-secondary">{s.label}</p>
-                  </div>
-                ))}
+          <div className="mt-6 md:mt-8 grid grid-cols-2 sm:grid-cols-4 gap-y-6">
+            {careerScope.map((s, i) => (
+              <div
+                key={i}
+                className={`${
+                  i > 0
+                    ? 'sm:border-l sm:border-rule sm:pl-6'
+                    : ''
+                } ${i % 2 !== 0 ? 'pl-6 border-l border-rule sm:pl-6' : ''}`}
+              >
+                <p className="font-serif text-2xl md:text-3xl font-bold text-ink tabular-nums">
+                  {s.value}
+                </p>
+                <p className="mt-1 text-sm text-secondary">{s.label}</p>
               </div>
-              <p className="mt-6 text-base text-secondary leading-relaxed max-w-prose">
-                From Cognizant in Tokyo to Databricks in Toronto. Product management,
-                general management, and commercial leadership across B2B SaaS, fintech,
-                payments, and data platforms. Duke MBA. Five production AI systems shipped.
-              </p>
-            </div>
-
-            {/* Headshot on desktop: right column */}
-            <img
-              src="/hd-1791323747777-99d17db7-ba6b-4b64-9584-a139bd203213.png"
-              alt="Aju Joseph John"
-              className="hidden md:block w-48 h-48 object-cover border border-rule flex-shrink-0"
-            />
+            ))}
           </div>
+          <p className="mt-6 text-base text-secondary leading-relaxed max-w-prose">
+            From Cognizant in Tokyo to Databricks in Toronto. Product management,
+            general management, and commercial leadership across B2B SaaS, fintech,
+            payments, and data platforms. Duke MBA. Five production AI systems shipped.
+          </p>
         </section>
 
         <hr />

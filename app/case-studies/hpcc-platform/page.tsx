@@ -25,14 +25,14 @@ const headlineMetrics = [
 
 const relatedStudies = [
   {
-    title: 'CanadaHelps Turnaround',
-    metric: '67% → 83% Retention',
+    title: 'B2B Payments Business Turnaround',
+    metric: '$230M → $266M Revenue',
     href: '/case-studies/canadahelps-turnaround',
   },
   {
-    title: 'Ensemble: 0 to 1 SaaS Incubation',
-    metric: '$432K ARR',
-    href: '/case-studies/ensemble',
+    title: 'Building a $150M Banking Intelligence Portfolio',
+    metric: '~$150M Portfolio',
+    href: '/case-studies/fiserv-portfolio',
   },
   {
     title: 'Redline: AI Contract Review',

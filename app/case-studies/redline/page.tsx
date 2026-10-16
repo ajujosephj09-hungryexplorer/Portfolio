@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Redline: AI Contract Review for Freelancers | Aju Joseph John',
     description:
-      'Research driven AI contract review. Every risk flag cites the exact source sentence from the document. 68 tests, 13 routes, live deployed. Built at Mapleview Partners.',
+      'Research driven AI contract review. Every risk flag cites the exact source sentence from the document. 68 tests, 13 routes, live deployed.',
     url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/redline',
   },
   alternates: {
@@ -24,14 +24,14 @@ const headlineMetrics = [
 
 const relatedStudies = [
   {
-    title: 'CanadaHelps Turnaround',
-    metric: '67% → 83% Retention',
+    title: 'B2B Payments Business Turnaround',
+    metric: '$230M → $266M Revenue',
     href: '/case-studies/canadahelps-turnaround',
   },
   {
-    title: 'Ensemble: 0 to 1 SaaS Incubation',
-    metric: '$432K ARR',
-    href: '/case-studies/ensemble',
+    title: 'Building a $150M Banking Intelligence Portfolio',
+    metric: '~$150M Portfolio',
+    href: '/case-studies/fiserv-portfolio',
   },
   {
     title: 'HPCC Platform Commercialization',
@@ -46,11 +46,9 @@ const sections = [
     content: (
       <>
         <p>
-          Mapleview Partners is my independent advisory practice. One thread of that work
-          is building production AI systems that solve real problems, not demos or concepts,
-          but shipped products with inspectable code. Redline came from a specific question:
-          what would it take to build an AI system that freelancers actually trust with their
-          contracts?
+          Redline is a personal AI project. Not a demo or a concept, but a shipped product
+          with inspectable code. It came from a specific question: what would it take to
+          build an AI system that freelancers actually trust with their contracts?
         </p>
         <p className="mt-4">
           Freelancers receive contracts written by the other party. The language that hurts
@@ -257,13 +255,13 @@ export default function RedlinePage() {
   return (
     <CaseStudyLayout
       title="Redline: AI Contract Review"
-      companyLine="Mapleview Partners. Research driven AI contract review for freelancers. Every risk flag cites the exact source sentence."
+      companyLine="Personal AI project. Research driven contract review for freelancers. Every risk flag cites the exact source sentence."
       metrics={headlineMetrics}
       sections={sections}
       relatedStudies={relatedStudies}
       seo={{
         title: 'Redline: AI Contract Review for Freelancers',
-        companyName: 'Mapleview Partners',
+        companyName: 'Personal AI Project',
         datePublished: '2026-10-15',
         dateModified: '2026-10-15',
         description:

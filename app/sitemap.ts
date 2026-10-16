@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/ensemble',
+      url: 'https://portfolio-git-main-aju-joseph-johns-projects.vercel.app/case-studies/fiserv-portfolio',
       lastModified: new Date(),
     },
     {

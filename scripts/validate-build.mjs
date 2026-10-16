@@ -21,8 +21,8 @@ const ROUTES = [
     file: 'case-studies/canadahelps-turnaround.html',
   },
   {
-    path: '/case-studies/ensemble',
-    file: 'case-studies/ensemble.html',
+    path: '/case-studies/fiserv-portfolio',
+    file: 'case-studies/fiserv-portfolio.html',
   },
   {
     path: '/case-studies/hpcc-platform',
@@ -328,10 +328,9 @@ if (existsSync(sitemapPath)) {
 // ---------------------------------------------------------------------------
 console.log('\n── Content checks ──')
 
-// CanadaHelps framing on canadahelps-turnaround and ensemble
+// CanadaHelps framing on canadahelps-turnaround
 for (const file of [
   'case-studies/canadahelps-turnaround.html',
-  'case-studies/ensemble.html',
 ]) {
   const fullPath = join(OUT_DIR, file)
   if (!existsSync(fullPath)) continue
