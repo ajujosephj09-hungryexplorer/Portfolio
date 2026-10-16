@@ -148,6 +148,8 @@ export default function HomePage() {
             <img
               src="/hd-1791323747777-99d17db7-ba6b-4b64-9584-a139bd203213.png"
               alt="Aju Joseph John"
+              width={160}
+              height={160}
               className="mt-6 md:mt-4 w-32 h-32 md:w-40 md:h-40 object-cover border border-rule headshot flex-shrink-0"
             />
           </div>
@@ -186,7 +188,7 @@ export default function HomePage() {
               <rect x="2" y="4" width="20" height="16" rx="0" />
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
-            Email
+            ajujosephj09@gmail.com
           </a>
           <a
             href="https://www.linkedin.com/in/aju-joseph-john/"
