@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Aju Joseph John | Product & Commercial Leader',
   description:
-    'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. $27M+ P&L, $150M portfolio, five production AI systems.',
+    'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. Three products built 0 to 1. ~$150M P&L. Three AI systems in production.',
   openGraph: {
     title: 'Aju Joseph John | Product & Commercial Leader',
     description:
-      'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. $27M+ P&L, $150M portfolio, five production AI systems.',
+      'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. Three products built 0 to 1. ~$150M P&L. Three AI systems in production.',
     url: 'https://ajujosephjohn.com',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John — Product & Commercial Leader' }],
   },
@@ -61,17 +61,17 @@ const caseStudies = [
 ]
 
 const metrics = [
-  { value: '$230M → $266M', label: 'Processing Revenue', study: 'B2B Payments Turnaround' },
-  { value: '~$150M', label: 'Banking P&L', study: 'Fiserv' },
-  { value: '$50M+', label: 'Platform Revenue', study: 'HPCC at LexisNexis' },
-  { value: 'Live', label: 'AI Product Shipped', study: 'Redline' },
+  { value: '3', label: 'Products Built 0→1' },
+  { value: '$230M → $266M', label: 'Revenue Grown' },
+  { value: '~$150M', label: 'P&L Owned' },
+  { value: '3', label: 'AI Systems Shipped' },
 ]
 
 const careerScope = [
   { value: '20', label: 'Years' },
   { value: '4', label: 'Countries' },
-  { value: '$27M+', label: 'P&L' },
-  { value: '5', label: 'AI Systems' },
+  { value: '3', label: 'Industries' },
+  { value: 'Duke', label: 'MBA' },
 ]
 
 export default function HomePage() {
@@ -142,7 +142,7 @@ export default function HomePage() {
               </p>
               <p className="mt-3 text-base text-secondary leading-relaxed max-w-2xl">
                 20 years across B2B SaaS, fintech, payments, and data platforms.
-                Four countries. $27M+ in P&L ownership. Five production AI systems shipped.
+                Four countries. Three products built from zero. Three AI systems in production.
               </p>
             </div>
             <img
