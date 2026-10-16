@@ -23,7 +23,7 @@ const caseStudies = [
     company:
       "Canada's largest online giving and payments platform. $260M+ annual processing volume. $27M+ P&L.",
     teaser:
-      'Inherited four disconnected teams with no aligned strategy. Built one coherent operating model, restructured into cross functional pods, and deployed AI as an operating lever. Processing revenue grew from $230M to $266M. NPS from 5 to 33.',
+      'Inherited four disconnected teams with no strategy. Rebuilt the operating model and grew processing revenue from $230M to $266M; NPS from 5 to 33.',
     metric: '$230M → $266M',
     metricLabel: 'Processing Revenue',
     href: '/case-studies/canadahelps-turnaround',
@@ -33,7 +33,7 @@ const caseStudies = [
     company:
       'Fiserv. Senior Director, Product Management. ~$150M banking intelligence portfolio serving ~4,000 banks.',
     teaser:
-      'Inherited a declining portfolio after a major acquisition restructuring. Built Abiliti, a new SaaS analytics platform, from scratch to $24.9M ARR. Led the SBA PPP crisis response, disbursing ~$5B in under 3 weeks. Drove Apple Pay API monetization across 500+ banks.',
+      'Inherited a declining portfolio after a major acquisition. Built a new SaaS analytics platform to $24.9M ARR, led a crisis response disbursing ~$5B in under 3 weeks, and monetized Apple Pay API across 500+ banks.',
     metric: '~$150M',
     metricLabel: 'Portfolio',
     href: '/case-studies/fiserv-portfolio',
@@ -42,7 +42,7 @@ const caseStudies = [
     title: 'HPCC Platform Commercialization',
     company: 'LexisNexis Risk Solutions',
     teaser:
-      'Turned an internal big data platform into a $50M+ market facing business. Built the entire go to market from scratch: reseller network, delivery partnerships, marketplace, and a developer community of 25,000+. Secured $38M in investment through 12 business cases approved by the CEO and parent company chairman.',
+      'Turned an internal big data platform into a $50M+ market facing business, building the go to market from scratch and securing $38M in investment through 12 CEO approved business cases.',
     metric: '$50M+',
     metricLabel: 'Revenue',
     href: '/case-studies/hpcc-platform',
@@ -52,7 +52,7 @@ const caseStudies = [
     company:
       'Personal AI project. Contract review built from user research through production deployment.',
     teaser:
-      'Research found 71% of freelancers experience non payment. Built a trust first AI system where every risk flag cites its source sentence. 68 tests, 13 routes, live and inspectable.',
+      'Research found 71% of freelancers experience non payment. Built a trust first AI contract review system where every risk flag cites its source sentence: live and inspectable.',
     metric: 'Live',
     metricLabel: 'AI Product',
     href: '/case-studies/redline',
@@ -179,12 +179,12 @@ export default function HomePage() {
         <hr />
 
         {/* ─── CTA (above the fold) ─── */}
-        <section className="py-8 flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
+        <section className="py-8 flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6" aria-label="Contact">
           <a
             href="mailto:ajujosephj09@gmail.com"
-            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-blue-800 transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-accent-hover transition-colors"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="2" y="4" width="20" height="16" rx="0" />
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
@@ -196,9 +196,9 @@ export default function HomePage() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 border border-ink text-ink px-6 py-3.5 text-sm font-semibold no-underline hover:bg-ink hover:text-ground transition-colors"
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-              <rect x="2" y="9" width="4" height="12" />
+              <rect x="2" y="9" width="4" height="12" rx="0" />
               <circle cx="4" cy="4" r="2" />
             </svg>
             LinkedIn
@@ -322,9 +322,9 @@ export default function HomePage() {
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
             <a
               href="mailto:ajujosephj09@gmail.com"
-              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-blue-800 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-accent-hover transition-colors"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="4" width="20" height="16" rx="0" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
@@ -336,9 +336,9 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border border-ink text-ink px-6 py-3.5 text-sm font-semibold no-underline hover:bg-ink hover:text-ground transition-colors"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                <rect x="2" y="9" width="4" height="12" />
+                <rect x="2" y="9" width="4" height="12" rx="0" />
                 <circle cx="4" cy="4" r="2" />
               </svg>
               LinkedIn

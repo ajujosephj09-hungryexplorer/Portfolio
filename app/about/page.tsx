@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Aju Joseph John',
+  title: 'About',
   description:
     'Product and commercial leader with 20 years building products from zero and running the P&L to scale them across B2B SaaS, fintech, payments, and data platforms. Four countries. ~$150M P&L. Three live AI systems.',
   openGraph: {
@@ -62,7 +62,7 @@ const experience = [
     ],
   },
   {
-    period: '2010 to 2012',
+    period: 'Aug 2010 to May 2012',
     role: 'MBA',
     company: 'Duke University (Fuqua School of Business)',
     proofPoints: [
@@ -70,7 +70,7 @@ const experience = [
     ],
   },
   {
-    period: '2004 to 2010',
+    period: 'Jan 2004 to Jul 2010',
     role: 'Technology Lead',
     company: 'Cognizant Technology Solutions',
     proofPoints: [
@@ -255,15 +255,15 @@ export default function AboutPage() {
 
           <div className="mt-8 space-y-5 text-base text-ink leading-relaxed max-w-3xl">
             <p>
-              <strong>Building businesses from zero.</strong> I have done this four times across three companies. CanadaHelps Ensemble: stealth to 200+ customers and $36K MRR in 12 months. LexisNexis HPCC: internal platform to $50M+ external business. The 0 to 1 to N arc, discovery, launch, scale, is my core operating mode.
+              <strong>Autonomy with accountability, not consensus by committee.</strong> Give me a business problem, a team, clear metrics, and decision rights; I will present to the board quarterly and own the result. Environments where every decision needs five sign-offs drain the energy that should go into building.
             </p>
 
             <p>
-              <strong>Owning the full stack: product, commercial, and P&L.</strong> I do not build the roadmap and hand it off. I own the revenue line, the pricing, the GTM motion, and the team that delivers it. At CanadaHelps (Canada's largest online giving and payments platform, $260M+ processing volume, $27M+ P&L) I owned all of it. Product leadership and commercial accountability are inseparable.
+              <strong>Building people, not just products.</strong> Five promotions in three years. eNPS of 44. I invest in the people around me because durable organizations outlast any single product cycle. Shipping features is the easy part; building a team that keeps shipping after you leave is the actual work.
             </p>
 
             <p>
-              <strong>AI applied to real commercial problems.</strong> Not AI for its own sake. AI that changes how a business acquires, qualifies, and serves customers. I built a human in the loop AI sales agent that lifted lead conversion by 45 points. I have three live AI systems in production. This is the intersection where product leadership and applied AI compound.
+              <strong>The arc points toward CRO or CEO, not CPO.</strong> Product leadership without commercial accountability feels incomplete. The line from roadmap to revenue needs to be visible and mine. That conviction shapes every role I take and every decision I make inside it.
             </p>
           </div>
         </section>
@@ -282,9 +282,10 @@ export default function AboutPage() {
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
             <a
               href="mailto:ajujosephj09@gmail.com"
-              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-blue-800 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-accent-hover transition-colors"
             >
               <svg
+                aria-hidden="true"
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
@@ -306,6 +307,7 @@ export default function AboutPage() {
               className="inline-flex items-center justify-center gap-2 border border-ink text-ink px-6 py-3.5 text-sm font-semibold no-underline hover:bg-ink hover:text-ground transition-colors"
             >
               <svg
+                aria-hidden="true"
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
@@ -316,7 +318,7 @@ export default function AboutPage() {
                 strokeLinejoin="round"
               >
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                <rect x="2" y="9" width="4" height="12" />
+                <rect x="2" y="9" width="4" height="12" rx="0" />
                 <circle cx="4" cy="4" r="2" />
               </svg>
               LinkedIn

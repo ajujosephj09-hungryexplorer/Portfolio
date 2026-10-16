@@ -8,16 +8,38 @@ export default function NotFound() {
           Page Not Found
         </h1>
         <p className="mt-6 text-base text-secondary leading-relaxed max-w-3xl">
-          The page you are looking for does not exist or has been moved.
+          The page you are looking for does not exist or has been moved. You can find all four case studies and contact details from the homepage.
         </p>
         <div className="mt-8">
           <Link
             href="/"
-            className="inline-flex items-center justify-center bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-blue-800 transition-colors"
+            className="inline-flex items-center justify-center bg-accent text-white px-6 py-3.5 text-sm font-semibold no-underline hover:bg-accent-hover transition-colors"
           >
             Back to Home
           </Link>
         </div>
+        <ul className="mt-6 space-y-2">
+          <li>
+            <Link href="/case-studies/canadahelps-turnaround" className="text-sm text-accent font-semibold no-underline hover:underline">
+              B2B Payments Business Turnaround
+            </Link>
+          </li>
+          <li>
+            <Link href="/case-studies/fiserv-portfolio" className="text-sm text-accent font-semibold no-underline hover:underline">
+              Building a $150M Banking Intelligence Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link href="/case-studies/hpcc-platform" className="text-sm text-accent font-semibold no-underline hover:underline">
+              HPCC Platform Commercialization
+            </Link>
+          </li>
+          <li>
+            <Link href="/case-studies/redline" className="text-sm text-accent font-semibold no-underline hover:underline">
+              Redline: AI Contract Review
+            </Link>
+          </li>
+        </ul>
       </section>
     </article>
   )

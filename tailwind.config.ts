@@ -11,6 +11,7 @@ const config: Config = {
         ground: '#FAFAFA',
         ink: '#111827',
         accent: '#1D4ED8',
+        'accent-hover': '#1E40AF',
         secondary: '#4B5563',
         rule: '#D1D5DB',
       },
