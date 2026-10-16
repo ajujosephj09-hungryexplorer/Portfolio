@@ -125,7 +125,7 @@ export default function CaseStudyLayout({
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-ink leading-tight">
             {title}
           </h1>
-          <p className="mt-4 text-base text-secondary leading-relaxed max-w-prose">
+          <p className="mt-4 text-base text-secondary leading-relaxed max-w-3xl">
             {companyLine}
           </p>
 
@@ -156,7 +156,7 @@ export default function CaseStudyLayout({
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-ink">
                 {section.heading}
               </h2>
-              <div className="mt-6 text-base text-ink leading-relaxed max-w-prose">
+              <div className="mt-6 text-base text-ink leading-relaxed max-w-3xl">
                 {section.content}
               </div>
             </section>
@@ -202,7 +202,7 @@ export default function CaseStudyLayout({
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-ink">
             Get in Touch
           </h2>
-          <p className="mt-4 text-base text-secondary leading-relaxed max-w-prose">
+          <p className="mt-4 text-base text-secondary leading-relaxed max-w-3xl">
             Open to conversations about product leadership, commercial strategy,
             and AI driven product development.
           </p>
