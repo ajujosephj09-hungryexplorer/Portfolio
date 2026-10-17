@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       'Research driven AI contract review. Every risk flag cites the exact source sentence from the document. 68 tests, 13 routes, live deployed.',
     url: 'https://ajujosephjohn.com/case-studies/redline',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John — Product & Commercial Leader' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John - Product & Commercial Leader' }],
   },
   alternates: {
     canonical: 'https://ajujosephjohn.com/case-studies/redline',

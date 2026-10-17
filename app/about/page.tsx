@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description:
       'Product and commercial leader with 20 years building products from zero and running the P&L to scale them across B2B SaaS, fintech, payments, and data platforms.',
     url: 'https://ajujosephjohn.com/about',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John — Product & Commercial Leader' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John - Product & Commercial Leader' }],
   },
   alternates: {
     canonical: 'https://ajujosephjohn.com/about',
@@ -112,7 +112,7 @@ export default function AboutPage() {
               'Fintech',
               'Payments',
               'General Management',
-              'Go-to-Market Strategy',
+              'Go to Market Strategy',
             ],
           }),
         }}

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       'Led a B2B payments business turnaround at CanadaHelps. Restructured four teams into cross functional pods, deployed AI as an operating lever. Processing revenue $230M to $266M. NPS 5 to 33.',
     url: 'https://ajujosephjohn.com/case-studies/canadahelps-turnaround',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John — Product & Commercial Leader' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John - Product & Commercial Leader' }],
   },
   alternates: {
     canonical: 'https://ajujosephjohn.com/case-studies/canadahelps-turnaround',

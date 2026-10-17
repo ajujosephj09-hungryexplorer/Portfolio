@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. Three products built 0 to 1. ~$150M P&L. Three AI systems in production.',
     url: 'https://ajujosephjohn.com',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John — Product & Commercial Leader' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John - Product & Commercial Leader' }],
   },
   alternates: {
     canonical: 'https://ajujosephjohn.com',

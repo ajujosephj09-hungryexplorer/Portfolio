@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       'Turned an internal big data platform at LexisNexis into a $50M+ market facing business. 100+ enterprise clients. 25,000+ developer community. 12 business cases totaling $38M in investment.',
     url: 'https://ajujosephjohn.com/case-studies/hpcc-platform',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John — Product & Commercial Leader' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John - Product & Commercial Leader' }],
   },
   alternates: {
     canonical: 'https://ajujosephjohn.com/case-studies/hpcc-platform',
