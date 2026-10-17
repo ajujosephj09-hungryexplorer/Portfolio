@@ -89,6 +89,7 @@ export default function AboutPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Person',
+            '@id': 'https://ajujosephjohn.com/#person',
             name: 'Aju Joseph John',
             jobTitle: 'Product & Commercial Leader',
             url: 'https://ajujosephjohn.com',

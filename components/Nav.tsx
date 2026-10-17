@@ -10,7 +10,7 @@ export default function Nav() {
 
   const isActive = (href: string) => {
     if (href === '/about') return pathname === '/about'
-    if (href === '/#case-studies') return pathname.startsWith('/case-studies')
+    if (href === '/case-studies') return pathname.startsWith('/case-studies')
     return false
   }
 
@@ -31,7 +31,7 @@ export default function Nav() {
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
-          <Link href="/#case-studies" className={navLinkClass('/#case-studies')}>
+          <Link href="/case-studies" className={navLinkClass('/case-studies')}>
             Case Studies
           </Link>
           <Link href="/about" className={navLinkClass('/about')}>
@@ -89,7 +89,7 @@ export default function Nav() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden border-t border-rule px-6 py-4 flex flex-col gap-1">
-          <Link href="/#case-studies" className={`${navLinkClass('/#case-studies')} py-2 focus-visible:text-ink`} onClick={() => setMenuOpen(false)}>
+          <Link href="/case-studies" className={`${navLinkClass('/case-studies')} py-2 focus-visible:text-ink`} onClick={() => setMenuOpen(false)}>
             Case Studies
           </Link>
           <Link href="/about" className={`${navLinkClass('/about')} py-2 focus-visible:text-ink`} onClick={() => setMenuOpen(false)}>

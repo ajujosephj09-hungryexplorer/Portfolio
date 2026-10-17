@@ -46,6 +46,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ajujosephjohn.com',
   },
+  twitter: {
+    card: 'summary_large_image',
+  },
   robots: {
     index: true,
     follow: true,

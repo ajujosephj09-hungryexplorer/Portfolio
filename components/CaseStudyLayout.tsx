@@ -92,7 +92,7 @@ export default function CaseStudyLayout({
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Case Studies',
-                item: 'https://ajujosephjohn.com/#case-studies',
+                item: 'https://ajujosephjohn.com/case-studies',
               },
               {
                 '@type': 'ListItem',
@@ -108,7 +108,7 @@ export default function CaseStudyLayout({
       <article className="mx-auto max-w-content px-6">
         {/* Breadcrumb */}
         <p className="pt-8 text-sm text-secondary">
-          <a href="/#case-studies" className="text-secondary no-underline hover:text-ink transition-colors">Case Studies</a>
+          <a href="/case-studies" className="text-secondary no-underline hover:text-ink transition-colors">Case Studies</a>
           <span className="mx-2 text-rule">/</span>
           <span>{title}</span>
         </p>
@@ -153,7 +153,10 @@ export default function CaseStudyLayout({
         {sections.map((section, i) => (
           <div key={i}>
             <section className="py-12 md:py-16">
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-ink">
+              <h2
+                id={section.heading.toLowerCase().replace(/\s+/g, '-')}
+                className="font-serif text-2xl md:text-3xl font-bold text-ink"
+              >
                 {section.heading}
               </h2>
               <div className="mt-6 text-base text-ink leading-relaxed max-w-3xl">

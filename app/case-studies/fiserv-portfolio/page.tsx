@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import CaseStudyLayout from '../../../components/CaseStudyLayout'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ajujosephjohn.com'),
   title: 'Building a $150M Banking Intelligence Portfolio at Fiserv',
   description:
     'How Aju Joseph John led a ~$150M banking intelligence portfolio at Fiserv serving ~4,000 banks and credit unions. Built Abiliti from scratch to $24.9M ARR, led SBA PPP crisis response disbursing ~$5B, and drove API monetization across 500+ banks.',

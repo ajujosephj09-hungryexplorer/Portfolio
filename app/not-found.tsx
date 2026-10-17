@@ -1,4 +1,13 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  robots: {
+    index: false,
+    follow: false,
+  },
+}
 
 export default function NotFound() {
   return (
@@ -19,6 +28,11 @@ export default function NotFound() {
           </Link>
         </div>
         <ul className="mt-6 space-y-2">
+          <li>
+            <Link href="/about" className="text-sm text-accent font-semibold no-underline hover:underline">
+              About
+            </Link>
+          </li>
           <li>
             <Link href="/case-studies/canadahelps-turnaround" className="text-sm text-accent font-semibold no-underline hover:underline">
               B2B Payments Business Turnaround

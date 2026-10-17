@@ -84,6 +84,7 @@ export default function HomePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Person',
+            '@id': 'https://ajujosephjohn.com/#person',
             name: 'Aju Joseph John',
             jobTitle: 'Product & Commercial Leader',
             url: 'https://ajujosephjohn.com',
@@ -150,6 +151,8 @@ export default function HomePage() {
               alt="Aju Joseph John"
               width={160}
               height={160}
+              loading="lazy"
+              decoding="async"
               className="mt-6 md:mt-4 w-32 h-32 md:w-40 md:h-40 object-cover border border-rule headshot flex-shrink-0"
             />
           </div>
