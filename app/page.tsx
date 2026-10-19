@@ -142,7 +142,7 @@ export default function HomePage() {
                 Product and P&L leader who builds from zero and deploys AI as an operating lever.
               </p>
               <p className="mt-3 text-base text-secondary leading-relaxed max-w-2xl">
-                20 years across B2B SaaS, fintech, payments, and data platforms.
+                B2B SaaS, fintech & payments, and software platforms.
                 Four countries. Three products built from zero. Three AI systems in production.
               </p>
             </div>
