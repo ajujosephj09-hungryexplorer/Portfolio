@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     template: '%s | Aju Joseph John',
   },
   description:
-    'Product and commercial leader with 20 years building products from zero and running the P&L to scale them. B2B SaaS, fintech, payments, data platforms.',
+    'Product and commercial leader building products from zero and running the P&L to scale them. B2B SaaS, fintech & payments, and software platforms.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     siteName: 'Aju Joseph John',
     title: 'Aju Joseph John | Product & Commercial Leader',
     description:
-      'Product and commercial leader with 20 years building products from zero and running the P&L to scale them. B2B SaaS, fintech, payments, data platforms.',
+      'Product and commercial leader building products from zero and running the P&L to scale them. B2B SaaS, fintech & payments, and software platforms.',
     url: 'https://ajujosephjohn.com',
     images: [
       {

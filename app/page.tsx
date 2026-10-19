@@ -4,11 +4,11 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Aju Joseph John | Product & Commercial Leader',
   description:
-    'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. Three products built 0 to 1. ~$150M P&L. Three AI systems in production.',
+    'Product and P&L leader who builds from zero and deploys AI as an operating lever. B2B SaaS, fintech & payments, and software platforms. Three products built 0 to 1. ~$150M P&L. Three AI systems in production.',
   openGraph: {
     title: 'Aju Joseph John | Product & Commercial Leader',
     description:
-      'Product and P&L leader who builds from zero and deploys AI as an operating lever. 20 years across B2B SaaS, fintech, payments, and data platforms. Three products built 0 to 1. ~$150M P&L. Three AI systems in production.',
+      'Product and P&L leader who builds from zero and deploys AI as an operating lever. B2B SaaS, fintech & payments, and software platforms. Three products built 0 to 1. ~$150M P&L. Three AI systems in production.',
     url: 'https://ajujosephjohn.com',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John - Product & Commercial Leader' }],
   },

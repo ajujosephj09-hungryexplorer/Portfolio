@@ -3,11 +3,11 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'Product and commercial leader with 20 years building products from zero and running the P&L to scale them across B2B SaaS, fintech, payments, and data platforms. Four countries. ~$150M P&L. Three live AI systems.',
+    'Product and commercial leader building products from zero and running the P&L to scale them across B2B SaaS, fintech & payments, and software platforms. Four countries. ~$150M P&L. Three live AI systems.',
   openGraph: {
     title: 'About Aju Joseph John',
     description:
-      'Product and commercial leader with 20 years building products from zero and running the P&L to scale them across B2B SaaS, fintech, payments, and data platforms.',
+      'Product and commercial leader building products from zero and running the P&L to scale them across B2B SaaS, fintech & payments, and software platforms.',
     url: 'https://ajujosephjohn.com/about',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Aju Joseph John - Product & Commercial Leader' }],
   },

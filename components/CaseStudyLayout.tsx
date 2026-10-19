@@ -115,7 +115,7 @@ export default function CaseStudyLayout({
 
         {/* IdentityBar */}
         <p className="mt-4 text-sm text-secondary leading-relaxed">
-          Aju Joseph John is a product and commercial leader. 20 years across B2B SaaS, fintech, payments, and data platforms.
+          Aju Joseph John is a product and commercial leader. B2B SaaS, fintech & payments, and software platforms.
         </p>
 
         <hr className="mt-6" />
